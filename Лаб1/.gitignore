@@ -1,0 +1,27 @@
+# Утилиты и кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+
+# Виртуальные окружения (если будешь использовать)
+venv/
+.venv/
+env/
+
+# Настройки VS Code
+.vscode/
+
+# Промежуточные файлы компиляции LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Игнорируем macOS артефакты (на всякий случай)
+.DS_Store
