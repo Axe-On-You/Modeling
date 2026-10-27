@@ -1,0 +1,56 @@
+[
+  {
+    "system": 1,
+    "states": 12,
+    "metrics": 24,
+    "steps": 40,
+    "sweep_metric_values": 960,
+    "sweep_probability_values": 480,
+    "errors": {
+      "matrix": 1.1102230246251565e-16,
+      "point_metrics": 2.9774436089979872e-06,
+      "point_probabilities": 4.527509269713903e-07,
+      "sweep_metrics": 7.913210813725868e-06,
+      "sweep_probabilities": 5.20221398875309e-07,
+      "formula_values": 2.1316282072803006e-14,
+      "probability_normalization": 2.0000000000575113e-06
+    },
+    "point_totals": {
+      "Y": 3.0,
+      "R": 1.516814,
+      "Q": 1.656407,
+      "M": 3.173222,
+      "W": 5.460153,
+      "U": 10.460154,
+      "Loss": 0.494395,
+      "Perf": 0.303363
+    }
+  },
+  {
+    "system": 2,
+    "states": 30,
+    "metrics": 32,
+    "steps": 40,
+    "sweep_metric_values": 1280,
+    "sweep_probability_values": 1200,
+    "errors": {
+      "matrix": 1.1102230246251565e-16,
+      "point_metrics": 9.130434790449726e-07,
+      "point_probabilities": 4.949851970261453e-07,
+      "sweep_metrics": 7.055259429122884e-06,
+      "sweep_probabilities": 5.286955109817804e-07,
+      "formula_values": 7.105427357601002e-15,
+      "probability_normalization": 4.000000000004e-06
+    },
+    "point_totals": {
+      "Y": 3.0,
+      "R": 1.432517,
+      "Q": 0.614569,
+      "M": 2.047086,
+      "W": 2.145069,
+      "U": 7.145069,
+      "Loss": 0.522494,
+      "Perf": 0.286503
+    }
+  }
+]

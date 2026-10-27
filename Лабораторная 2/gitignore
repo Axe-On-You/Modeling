@@ -1,0 +1,107 @@
+# Python: bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.ipynb_checkpoints/
+
+# Python: virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+.python-version
+
+# Python: build and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# Python: coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# Local environment variables
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Other editor caches and temporary files
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# LaTeX: intermediate build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.vrb
+*.xdv
+*.dvi
+*.spl
+*.loa
+*.lol
+*.idx
+*.ilg
+*.ind
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.thm
+*.pdfsync
+
+# WinMark: generated help index
+*.chw
+
+# Windows / macOS
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Keep source and evidence files tracked:
+# app/*.py, docs/*.tex, HTML, PDF, images, *.mrk, *.json, *.txt.
+# Do not add broad rules for out/, WinMark/out/, *.exe or *.dll:
+# these directories contain calculation evidence and the supplied WinMark runtime.

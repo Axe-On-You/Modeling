@@ -1,0 +1,21 @@
+SYSTEM_1: states=12; formulas=24; steps=40
+checked sweep: 960 metric values; 480 probabilities
+matrix: max absolute difference=1.110223025e-16
+point_metrics: max absolute difference=2.977443609e-06
+point_probabilities: max absolute difference=4.527509270e-07
+sweep_metrics: max absolute difference=7.913210814e-06
+sweep_probabilities: max absolute difference=5.202213989e-07
+formula_values: max absolute difference=2.131628207e-14
+probability_normalization: max absolute difference=2.000000000e-06
+point: Y=3.000000 R=1.516814 Q=1.656407 M=3.173222 W=5.460153 U=10.460154 Loss=0.494395 Perf=0.303363
+SYSTEM_2: states=30; formulas=32; steps=40
+checked sweep: 1280 metric values; 1200 probabilities
+matrix: max absolute difference=1.110223025e-16
+point_metrics: max absolute difference=9.130434790e-07
+point_probabilities: max absolute difference=4.949851970e-07
+sweep_metrics: max absolute difference=7.055259429e-06
+sweep_probabilities: max absolute difference=5.286955110e-07
+formula_values: max absolute difference=7.105427358e-15
+probability_normalization: max absolute difference=4.000000000e-06
+point: Y=3.000000 R=1.432517 Q=0.614569 M=2.047086 W=2.145069 U=7.145069 Loss=0.522494 Perf=0.286503
+PASS: both exports agree with independent calculations.
