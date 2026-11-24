@@ -1,0 +1,5754 @@
+{
+  "engine": "GPSS World Student",
+  "markov": {
+    "busy": 1.516814197226568,
+    "throughput": 0.3033628394453136,
+    "loss_probability": 0.4943952675911439,
+    "queue_length": 1.6564073986754393,
+    "wait": 5.460152607036879,
+    "stay": 10.46015260703688
+  },
+  "experiments": {
+    "baseline": {
+      "parameters": {
+        "name": "baseline",
+        "family": "baseline",
+        "incoming": "exp",
+        "gap": 1.6666666666666667,
+        "service": "exp",
+        "service_time": 5,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 2.25,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.5198793333333334,
+          "ci95_halfwidth": 0.014887707243775762
+        },
+        "throughput": {
+          "mean": 0.30462760446170384,
+          "ci95_halfwidth": 0.006765852830975118
+        },
+        "loss_probability": {
+          "mean": 0.493175,
+          "ci95_halfwidth": 0.008496911855447003
+        },
+        "queue_length": {
+          "mean": 1.6579246666666667,
+          "ci95_halfwidth": 0.026037523084942202
+        },
+        "wait": {
+          "mean": 5.442711,
+          "ci95_halfwidth": 0.18890207331837125
+        },
+        "wait_sd": {
+          "mean": 6.585203,
+          "ci95_halfwidth": 0.2187335815359784
+        },
+        "wait_cv": {
+          "mean": 1.2099190874136376,
+          "ci95_halfwidth": 0.00226798419235164
+        },
+        "positive_wait_cv": {
+          "mean": 0.8691413927300905,
+          "ci95_halfwidth": 0.00742706720736182
+        },
+        "wait_zero": {
+          "mean": 0.28754912992223,
+          "ci95_halfwidth": 0.004028344010005834
+        },
+        "stay": {
+          "mean": 10.43232,
+          "ci95_halfwidth": 0.3446263682797141
+        },
+        "stay_sd": {
+          "mean": 8.236507666666666,
+          "ci95_halfwidth": 0.280507912958164
+        },
+        "stay_cv": {
+          "mean": 0.7895159772054476,
+          "ci95_halfwidth": 0.0027525669571273146
+        },
+        "observed_lost": 177543,
+        "max_waiting": 2
+      }
+    },
+    "flow_exp_050": {
+      "parameters": {
+        "name": "flow_exp_050",
+        "family": "flow",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6286216,
+          "ci95_halfwidth": 0.005857454025522719
+        },
+        "throughput": {
+          "mean": 0.08214299251042123,
+          "ci95_halfwidth": 0.0009480967957324743
+        },
+        "loss_probability": {
+          "mean": 0.055641666666666666,
+          "ci95_halfwidth": 0.0008503290455568293
+        },
+        "queue_length": {
+          "mean": 0.28803893333333336,
+          "ci95_halfwidth": 0.004876792537191573
+        },
+        "wait": {
+          "mean": 3.5066773333333336,
+          "ci95_halfwidth": 0.06851012619510459
+        },
+        "wait_sd": {
+          "mean": 7.30372,
+          "ci95_halfwidth": 0.12221365755181268
+        },
+        "wait_cv": {
+          "mean": 2.082816010961497,
+          "ci95_halfwidth": 0.006410363873409456
+        },
+        "positive_wait_cv": {
+          "mean": 0.94112213753135,
+          "ci95_halfwidth": 0.005980295594031338
+        },
+        "wait_zero": {
+          "mean": 0.6467438977348091,
+          "ci95_halfwidth": 0.0038804063247944408
+        },
+        "stay": {
+          "mean": 11.159556666666667,
+          "ci95_halfwidth": 0.17884249561863247
+        },
+        "stay_sd": {
+          "mean": 10.557093333333333,
+          "ci95_halfwidth": 0.17685745695857988
+        },
+        "stay_cv": {
+          "mean": 0.9460125458726916,
+          "ci95_halfwidth": 0.0011114369275476094
+        },
+        "observed_lost": 20031,
+        "max_waiting": 2
+      }
+    },
+    "flow_exp_075": {
+      "parameters": {
+        "name": "flow_exp_075",
+        "family": "flow",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 11.516666666666667,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8739398333333334,
+          "ci95_halfwidth": 0.0077834672910371
+        },
+        "throughput": {
+          "mean": 0.07604484545113553,
+          "ci95_halfwidth": 0.000874654784198691
+        },
+        "loss_probability": {
+          "mean": 0.12575,
+          "ci95_halfwidth": 0.0019291427857112914
+        },
+        "queue_length": {
+          "mean": 0.5599784666666666,
+          "ci95_halfwidth": 0.009768264212897799
+        },
+        "wait": {
+          "mean": 7.364054,
+          "ci95_halfwidth": 0.08886896914356238
+        },
+        "wait_sd": {
+          "mean": 12.6598,
+          "ci95_halfwidth": 0.18544303075159477
+        },
+        "wait_cv": {
+          "mean": 1.7191347572067568,
+          "ci95_halfwidth": 0.014401033968820965
+        },
+        "positive_wait_cv": {
+          "mean": 0.920340221999004,
+          "ci95_halfwidth": 0.009037410984610472
+        },
+        "wait_zero": {
+          "mean": 0.5330377433233738,
+          "ci95_halfwidth": 0.002000603760685017
+        },
+        "stay": {
+          "mean": 18.85662,
+          "ci95_halfwidth": 0.22501978590135557
+        },
+        "stay_sd": {
+          "mean": 17.06997,
+          "ci95_halfwidth": 0.24600347843025472
+        },
+        "stay_cv": {
+          "mean": 0.9052485742560558,
+          "ci95_halfwidth": 0.0040781758350975535
+        },
+        "observed_lost": 45270,
+        "max_waiting": 2
+      }
+    },
+    "flow_exp_095": {
+      "parameters": {
+        "name": "flow_exp_095",
+        "family": "flow",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 14.587777777777779,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.95,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.026273,
+          "ci95_halfwidth": 0.011302584800210473
+        },
+        "throughput": {
+          "mean": 0.070478494162838,
+          "ci95_halfwidth": 0.0008003445844364049
+        },
+        "loss_probability": {
+          "mean": 0.18973055555555557,
+          "ci95_halfwidth": 0.001585129422031865
+        },
+        "queue_length": {
+          "mean": 0.7760439666666666,
+          "ci95_halfwidth": 0.01390825463669142
+        },
+        "wait": {
+          "mean": 11.010706666666666,
+          "ci95_halfwidth": 0.1988897808537103
+        },
+        "wait_sd": {
+          "mean": 17.131803333333334,
+          "ci95_halfwidth": 0.3622021500029632
+        },
+        "wait_cv": {
+          "mean": 1.5559254944280199,
+          "ci95_halfwidth": 0.01973647006764309
+        },
+        "positive_wait_cv": {
+          "mean": 0.9058118371714524,
+          "ci95_halfwidth": 0.014137865675665794
+        },
+        "wait_zero": {
+          "mean": 0.46782713396210857,
+          "ci95_halfwidth": 0.004094718885828325
+        },
+        "stay": {
+          "mean": 25.572396666666666,
+          "ci95_halfwidth": 0.4171643702438644
+        },
+        "stay_sd": {
+          "mean": 22.416,
+          "ci95_halfwidth": 0.4994732509092934
+        },
+        "stay_cv": {
+          "mean": 0.8765644336514786,
+          "ci95_halfwidth": 0.009218225731626924
+        },
+        "observed_lost": 68303,
+        "max_waiting": 2
+      }
+    },
+    "flow_exp_099": {
+      "parameters": {
+        "name": "flow_exp_099",
+        "family": "flow",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 15.202,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.99,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.0538566666666667,
+          "ci95_halfwidth": 0.013565552732777614
+        },
+        "throughput": {
+          "mean": 0.0694317753399642,
+          "ci95_halfwidth": 0.0006099995178272516
+        },
+        "loss_probability": {
+          "mean": 0.20178055555555555,
+          "ci95_halfwidth": 0.0020127924137938787
+        },
+        "queue_length": {
+          "mean": 0.8181105666666667,
+          "ci95_halfwidth": 0.011241665037001837
+        },
+        "wait": {
+          "mean": 11.783096666666667,
+          "ci95_halfwidth": 0.10477601579909997
+        },
+        "wait_sd": {
+          "mean": 18.047706666666667,
+          "ci95_halfwidth": 0.2710279500998705
+        },
+        "wait_cv": {
+          "mean": 1.5316669338223396,
+          "ci95_halfwidth": 0.02279693086174704
+        },
+        "positive_wait_cv": {
+          "mean": 0.9056618144537482,
+          "ci95_halfwidth": 0.020067565570394737
+        },
+        "wait_zero": {
+          "mean": 0.4559936948158999,
+          "ci95_halfwidth": 0.00461511623382996
+        },
+        "stay": {
+          "mean": 26.96183,
+          "ci95_halfwidth": 0.3257965663519841
+        },
+        "stay_sd": {
+          "mean": 23.544686666666667,
+          "ci95_halfwidth": 0.28667200066932785
+        },
+        "stay_cv": {
+          "mean": 0.8732618028582928,
+          "ci95_halfwidth": 0.005638167800840737
+        },
+        "observed_lost": 72641,
+        "max_waiting": 2
+      }
+    },
+    "flow_trace_050": {
+      "parameters": {
+        "name": "flow_trace_050",
+        "family": "flow",
+        "incoming": "trace",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.53207,
+          "ci95_halfwidth": 0.009725562733703036
+        },
+        "throughput": {
+          "mean": 0.06940680397493178,
+          "ci95_halfwidth": 0.00016549228129786228
+        },
+        "loss_probability": {
+          "mean": 0.200675,
+          "ci95_halfwidth": 0.0019045467744066467
+        },
+        "queue_length": {
+          "mean": 0.38069586666666666,
+          "ci95_halfwidth": 0.00603350115805764
+        },
+        "wait": {
+          "mean": 5.485298666666667,
+          "ci95_halfwidth": 0.08061553407224917
+        },
+        "wait_sd": {
+          "mean": 8.829247666666667,
+          "ci95_halfwidth": 0.13302899073977995
+        },
+        "wait_cv": {
+          "mean": 1.6096237988522455,
+          "ci95_halfwidth": 0.011706342883294066
+        },
+        "positive_wait_cv": {
+          "mean": 0.9158513477048059,
+          "ci95_halfwidth": 0.01118801749948691
+        },
+        "wait_zero": {
+          "mean": 0.4879292884375769,
+          "ci95_halfwidth": 0.0014010906290581665
+        },
+        "stay": {
+          "mean": 13.151296666666667,
+          "ci95_halfwidth": 0.20762667233894605
+        },
+        "stay_sd": {
+          "mean": 11.668233333333333,
+          "ci95_halfwidth": 0.23568976331748506
+        },
+        "stay_cv": {
+          "mean": 0.8872257795550859,
+          "ci95_halfwidth": 0.0067832799422598315
+        },
+        "observed_lost": 72243,
+        "max_waiting": 2
+      }
+    },
+    "flow_trace_075": {
+      "parameters": {
+        "name": "flow_trace_075",
+        "family": "flow",
+        "incoming": "trace",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 11.516666666666667,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7068967333333334,
+          "ci95_halfwidth": 0.011918405316444535
+        },
+        "throughput": {
+          "mean": 0.06149829646335896,
+          "ci95_halfwidth": 0.00025994519792042574
+        },
+        "loss_probability": {
+          "mean": 0.2917444444444444,
+          "ci95_halfwidth": 0.0030020038522531886
+        },
+        "queue_length": {
+          "mean": 0.5742001999999999,
+          "ci95_halfwidth": 0.007271116619312899
+        },
+        "wait": {
+          "mean": 9.336819333333333,
+          "ci95_halfwidth": 0.15680941559371506
+        },
+        "wait_sd": {
+          "mean": 13.863966666666666,
+          "ci95_halfwidth": 0.20680403234894254
+        },
+        "wait_cv": {
+          "mean": 1.484875565226561,
+          "ci95_halfwidth": 0.0033444353987734663
+        },
+        "positive_wait_cv": {
+          "mean": 0.90026527233086,
+          "ci95_halfwidth": 0.0026070871539065773
+        },
+        "wait_zero": {
+          "mean": 0.43508186405871524,
+          "ci95_halfwidth": 0.0031665805778846256
+        },
+        "stay": {
+          "mean": 20.831386666666667,
+          "ci95_halfwidth": 0.33803625112091823
+        },
+        "stay_sd": {
+          "mean": 17.965983333333334,
+          "ci95_halfwidth": 0.26355624351497386
+        },
+        "stay_cv": {
+          "mean": 0.8624503710708776,
+          "ci95_halfwidth": 0.002351419645354044
+        },
+        "observed_lost": 105028,
+        "max_waiting": 2
+      }
+    },
+    "flow_trace_095": {
+      "parameters": {
+        "name": "flow_trace_095",
+        "family": "flow",
+        "incoming": "trace",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 14.587777777777779,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.95,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8217572333333333,
+          "ci95_halfwidth": 0.01376589702234542
+        },
+        "throughput": {
+          "mean": 0.05646727462352753,
+          "ci95_halfwidth": 0.0004005224655821402
+        },
+        "loss_probability": {
+          "mean": 0.34968333333333335,
+          "ci95_halfwidth": 0.004619234442962533
+        },
+        "queue_length": {
+          "mean": 0.7054975333333333,
+          "ci95_halfwidth": 0.01076650193158869
+        },
+        "wait": {
+          "mean": 12.49413,
+          "ci95_halfwidth": 0.2758958853576769
+        },
+        "wait_sd": {
+          "mean": 17.872266666666665,
+          "ci95_halfwidth": 0.3536062961559651
+        },
+        "wait_cv": {
+          "mean": 1.4304611746951703,
+          "ci95_halfwidth": 0.004248838754822153
+        },
+        "positive_wait_cv": {
+          "mean": 0.8956030773914232,
+          "ci95_halfwidth": 0.006223488008347057
+        },
+        "wait_zero": {
+          "mean": 0.4084118475185857,
+          "ci95_halfwidth": 0.0022802552415748713
+        },
+        "stay": {
+          "mean": 27.047063333333334,
+          "ci95_halfwidth": 0.619914368511983
+        },
+        "stay_sd": {
+          "mean": 23.02286,
+          "ci95_halfwidth": 0.41948571200334234
+        },
+        "stay_cv": {
+          "mean": 0.8512253556009491,
+          "ci95_halfwidth": 0.005196187652154727
+        },
+        "observed_lost": 125886,
+        "max_waiting": 2
+      }
+    },
+    "flow_trace_099": {
+      "parameters": {
+        "name": "flow_trace_099",
+        "family": "flow",
+        "incoming": "trace",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 15.202,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.99,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8435760999999999,
+          "ci95_halfwidth": 0.013080585065297442
+        },
+        "throughput": {
+          "mean": 0.05560928935899434,
+          "ci95_halfwidth": 0.0005394646090605346
+        },
+        "loss_probability": {
+          "mean": 0.35956666666666665,
+          "ci95_halfwidth": 0.006206323759438261
+        },
+        "queue_length": {
+          "mean": 0.7310532666666667,
+          "ci95_halfwidth": 0.019854502425816125
+        },
+        "wait": {
+          "mean": 13.14662,
+          "ci95_halfwidth": 0.48465736435335405
+        },
+        "wait_sd": {
+          "mean": 18.698903333333334,
+          "ci95_halfwidth": 0.566759372451112
+        },
+        "wait_cv": {
+          "mean": 1.4223724154143829,
+          "ci95_halfwidth": 0.009329615614384336
+        },
+        "positive_wait_cv": {
+          "mean": 0.8956670320705623,
+          "ci95_halfwidth": 0.007539489874239324
+        },
+        "wait_zero": {
+          "mean": 0.40385590132993954,
+          "ci95_halfwidth": 0.005063932291144836
+        },
+        "stay": {
+          "mean": 28.316546666666667,
+          "ci95_halfwidth": 0.8555894250380738
+        },
+        "stay_sd": {
+          "mean": 24.034176666666667,
+          "ci95_halfwidth": 0.6567382963721823
+        },
+        "stay_cv": {
+          "mean": 0.8487761081493016,
+          "ci95_halfwidth": 0.0029464643159647958
+        },
+        "observed_lost": 129444,
+        "max_waiting": 2
+      }
+    },
+    "flow_h2_050": {
+      "parameters": {
+        "name": "flow_h2_050",
+        "family": "flow",
+        "incoming": "h2",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.4851509,
+          "ci95_halfwidth": 0.008277247224604992
+        },
+        "throughput": {
+          "mean": 0.06325875294514101,
+          "ci95_halfwidth": 0.0014497157778716992
+        },
+        "loss_probability": {
+          "mean": 0.26984166666666665,
+          "ci95_halfwidth": 0.004838483853892171
+        },
+        "queue_length": {
+          "mean": 0.3586209,
+          "ci95_halfwidth": 0.011482015555002889
+        },
+        "wait": {
+          "mean": 5.668974333333333,
+          "ci95_halfwidth": 0.07045230512945187
+        },
+        "wait_sd": {
+          "mean": 8.930897333333334,
+          "ci95_halfwidth": 0.08507038292581792
+        },
+        "wait_cv": {
+          "mean": 1.5754066013969634,
+          "ci95_halfwidth": 0.007657600359296556
+        },
+        "positive_wait_cv": {
+          "mean": 0.9122053151392211,
+          "ci95_halfwidth": 0.006367273463623852
+        },
+        "wait_zero": {
+          "mean": 0.47381675924260197,
+          "ci95_halfwidth": 0.0007600439235166511
+        },
+        "stay": {
+          "mean": 13.338493333333334,
+          "ci95_halfwidth": 0.16762147166071667
+        },
+        "stay_sd": {
+          "mean": 11.756206666666666,
+          "ci95_halfwidth": 0.16442836806744865
+        },
+        "stay_cv": {
+          "mean": 0.8813739906981984,
+          "ci95_halfwidth": 0.004763962448882749
+        },
+        "observed_lost": 97143,
+        "max_waiting": 2
+      }
+    },
+    "flow_h2_075": {
+      "parameters": {
+        "name": "flow_h2_075",
+        "family": "flow",
+        "incoming": "h2",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 11.516666666666667,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6522740333333333,
+          "ci95_halfwidth": 0.01297645040168767
+        },
+        "throughput": {
+          "mean": 0.05676304626143816,
+          "ci95_halfwidth": 0.0014665846771696985
+        },
+        "loss_probability": {
+          "mean": 0.34482222222222225,
+          "ci95_halfwidth": 0.00539912410086873
+        },
+        "queue_length": {
+          "mean": 0.5202201333333334,
+          "ci95_halfwidth": 0.01494703511811737
+        },
+        "wait": {
+          "mean": 9.164888666666666,
+          "ci95_halfwidth": 0.2417173647391644
+        },
+        "wait_sd": {
+          "mean": 13.735999999999999,
+          "ci95_halfwidth": 0.2592111818491321
+        },
+        "wait_cv": {
+          "mean": 1.4987954432463229,
+          "ci95_halfwidth": 0.011368732836198553
+        },
+        "positive_wait_cv": {
+          "mean": 0.9054048350774778,
+          "ci95_halfwidth": 0.0037050442449281192
+        },
+        "wait_zero": {
+          "mean": 0.4394487714114953,
+          "ci95_halfwidth": 0.0042313245729794806
+        },
+        "stay": {
+          "mean": 20.65646,
+          "ci95_halfwidth": 0.4878889467558171
+        },
+        "stay_sd": {
+          "mean": 17.89235,
+          "ci95_halfwidth": 0.2838389791883219
+        },
+        "stay_cv": {
+          "mean": 0.8662038845538678,
+          "ci95_halfwidth": 0.006869713933690199
+        },
+        "observed_lost": 124136,
+        "max_waiting": 2
+      }
+    },
+    "flow_h2_095": {
+      "parameters": {
+        "name": "flow_h2_095",
+        "family": "flow",
+        "incoming": "h2",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 14.587777777777779,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.95,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7670791333333333,
+          "ci95_halfwidth": 0.01436279786441856
+        },
+        "throughput": {
+          "mean": 0.052655910104270814,
+          "ci95_halfwidth": 0.0011416755204799402
+        },
+        "loss_probability": {
+          "mean": 0.3922277777777778,
+          "ci95_halfwidth": 0.0052857637623303635
+        },
+        "queue_length": {
+          "mean": 0.6370977333333333,
+          "ci95_halfwidth": 0.015463288454743608
+        },
+        "wait": {
+          "mean": 12.09932,
+          "ci95_halfwidth": 0.2802920593646134
+        },
+        "wait_sd": {
+          "mean": 17.634216666666667,
+          "ci95_halfwidth": 0.31513999319942976
+        },
+        "wait_cv": {
+          "mean": 1.457476043411547,
+          "ci95_halfwidth": 0.010156493407860678
+        },
+        "positive_wait_cv": {
+          "mean": 0.9041380285736984,
+          "ci95_halfwidth": 0.007028351855065846
+        },
+        "wait_zero": {
+          "mean": 0.41826769320147084,
+          "ci95_halfwidth": 0.0016755562200637727
+        },
+        "stay": {
+          "mean": 26.667673333333333,
+          "ci95_halfwidth": 0.6403536796795163
+        },
+        "stay_sd": {
+          "mean": 22.83363333333333,
+          "ci95_halfwidth": 0.5470207663328288
+        },
+        "stay_cv": {
+          "mean": 0.8562293847073358,
+          "ci95_halfwidth": 0.002215743137059988
+        },
+        "observed_lost": 141202,
+        "max_waiting": 2
+      }
+    },
+    "flow_h2_099": {
+      "parameters": {
+        "name": "flow_h2_099",
+        "family": "flow",
+        "incoming": "h2",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 15.202,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.99,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7888164333333334,
+          "ci95_halfwidth": 0.016790563928670853
+        },
+        "throughput": {
+          "mean": 0.051967421493339785,
+          "ci95_halfwidth": 0.0010925792660745357
+        },
+        "loss_probability": {
+          "mean": 0.40016944444444447,
+          "ci95_halfwidth": 0.004602611053846885
+        },
+        "queue_length": {
+          "mean": 0.6601383333333334,
+          "ci95_halfwidth": 0.018016464560578763
+        },
+        "wait": {
+          "mean": 12.70302,
+          "ci95_halfwidth": 0.40985814183912095
+        },
+        "wait_sd": {
+          "mean": 18.42095,
+          "ci95_halfwidth": 0.38800633774158283
+        },
+        "wait_cv": {
+          "mean": 1.4501812757877546,
+          "ci95_halfwidth": 0.0171564672298781
+        },
+        "positive_wait_cv": {
+          "mean": 0.9030082286467882,
+          "ci95_halfwidth": 0.009441870747533868
+        },
+        "wait_zero": {
+          "mean": 0.4149457516181788,
+          "ci95_halfwidth": 0.004920341476312425
+        },
+        "stay": {
+          "mean": 27.882466666666666,
+          "ci95_halfwidth": 0.8189747935722465
+        },
+        "stay_sd": {
+          "mean": 23.855193333333332,
+          "ci95_halfwidth": 0.5524512715361065
+        },
+        "stay_cv": {
+          "mean": 0.855579741554039,
+          "ci95_halfwidth": 0.005892088348712685
+        },
+        "observed_lost": 144061,
+        "max_waiting": 2
+      }
+    },
+    "flow_uniform_050": {
+      "parameters": {
+        "name": "flow_uniform_050",
+        "family": "flow",
+        "incoming": "uniform",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6471511,
+          "ci95_halfwidth": 0.010647277059545093
+        },
+        "throughput": {
+          "mean": 0.08455486573218149,
+          "ci95_halfwidth": 0.0002250041624517863
+        },
+        "loss_probability": {
+          "mean": 0.026230555555555556,
+          "ci95_halfwidth": 0.000404809367981848
+        },
+        "queue_length": {
+          "mean": 0.22961106666666667,
+          "ci95_halfwidth": 0.003538378401271028
+        },
+        "wait": {
+          "mean": 2.7156336666666667,
+          "ci95_halfwidth": 0.03462501762710548
+        },
+        "wait_sd": {
+          "mean": 6.507817666666667,
+          "ci95_halfwidth": 0.03361963542391114
+        },
+        "wait_cv": {
+          "mean": 2.3964524072900404,
+          "ci95_halfwidth": 0.01866996461397621
+        },
+        "positive_wait_cv": {
+          "mean": 0.9599587547438095,
+          "ci95_halfwidth": 0.005074888815272119
+        },
+        "wait_zero": {
+          "mean": 0.7150278071504393,
+          "ci95_halfwidth": 0.005189567284725788
+        },
+        "stay": {
+          "mean": 10.369243333333333,
+          "ci95_halfwidth": 0.14202717605930507
+        },
+        "stay_sd": {
+          "mean": 10.034052666666668,
+          "ci95_halfwidth": 0.11038210845231611
+        },
+        "stay_cv": {
+          "mean": 0.9676791825797251,
+          "ci95_halfwidth": 0.004579503180016148
+        },
+        "observed_lost": 9443,
+        "max_waiting": 2
+      }
+    },
+    "flow_uniform_075": {
+      "parameters": {
+        "name": "flow_uniform_075",
+        "family": "flow",
+        "incoming": "uniform",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 11.516666666666667,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.9116809333333333,
+          "ci95_halfwidth": 0.013118946515266851
+        },
+        "throughput": {
+          "mean": 0.07938450389855327,
+          "ci95_halfwidth": 0.000117437082534174
+        },
+        "loss_probability": {
+          "mean": 0.08577222222222222,
+          "ci95_halfwidth": 0.0025940832482765877
+        },
+        "queue_length": {
+          "mean": 0.5286741333333334,
+          "ci95_halfwidth": 0.01088728158276327
+        },
+        "wait": {
+          "mean": 6.659704666666666,
+          "ci95_halfwidth": 0.14079885842265596
+        },
+        "wait_sd": {
+          "mean": 12.13133,
+          "ci95_halfwidth": 0.3058314207084277
+        },
+        "wait_cv": {
+          "mean": 1.821587660848563,
+          "ci95_halfwidth": 0.012122005483160449
+        },
+        "positive_wait_cv": {
+          "mean": 0.924766871522644,
+          "ci95_halfwidth": 0.016898290061090185
+        },
+        "wait_zero": {
+          "mean": 0.5703703939950382,
+          "ci95_halfwidth": 0.005881646934304675
+        },
+        "stay": {
+          "mean": 18.144103333333334,
+          "ci95_halfwidth": 0.3140153978505314
+        },
+        "stay_sd": {
+          "mean": 16.677093333333335,
+          "ci95_halfwidth": 0.3772834323377811
+        },
+        "stay_cv": {
+          "mean": 0.9191377543148909,
+          "ci95_halfwidth": 0.005149859818297687
+        },
+        "observed_lost": 30878,
+        "max_waiting": 2
+      }
+    },
+    "flow_uniform_095": {
+      "parameters": {
+        "name": "flow_uniform_095",
+        "family": "flow",
+        "incoming": "uniform",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 14.587777777777779,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.95,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.075406,
+          "ci95_halfwidth": 0.015413483146002575
+        },
+        "throughput": {
+          "mean": 0.07385811850976436,
+          "ci95_halfwidth": 0.0003775092981796698
+        },
+        "loss_probability": {
+          "mean": 0.14941944444444444,
+          "ci95_halfwidth": 0.0032128968838723527
+        },
+        "queue_length": {
+          "mean": 0.7807014,
+          "ci95_halfwidth": 0.018682418486523425
+        },
+        "wait": {
+          "mean": 10.570906666666666,
+          "ci95_halfwidth": 0.2736172624814136
+        },
+        "wait_sd": {
+          "mean": 16.869226666666666,
+          "ci95_halfwidth": 0.44218631458970986
+        },
+        "wait_cv": {
+          "mean": 1.5958161876167571,
+          "ci95_halfwidth": 0.006221708637866951
+        },
+        "positive_wait_cv": {
+          "mean": 0.9080467806343091,
+          "ci95_halfwidth": 0.015122049602610602
+        },
+        "wait_zero": {
+          "mean": 0.48555021670000065,
+          "ci95_halfwidth": 0.005278884660964329
+        },
+        "stay": {
+          "mean": 25.13132,
+          "ci95_halfwidth": 0.4879426177163083
+        },
+        "stay_sd": {
+          "mean": 22.233913333333334,
+          "ci95_halfwidth": 0.6136980750535773
+        },
+        "stay_cv": {
+          "mean": 0.8846949519510318,
+          "ci95_halfwidth": 0.008144352611909919
+        },
+        "observed_lost": 53791,
+        "max_waiting": 2
+      }
+    },
+    "flow_uniform_099": {
+      "parameters": {
+        "name": "flow_uniform_099",
+        "family": "flow",
+        "incoming": "uniform",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 15.202,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.99,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.1033866666666665,
+          "ci95_halfwidth": 0.0157571826293871
+        },
+        "throughput": {
+          "mean": 0.07269663509536961,
+          "ci95_halfwidth": 9.797154987227104e-05
+        },
+        "loss_probability": {
+          "mean": 0.16279166666666667,
+          "ci95_halfwidth": 0.0017939920941351577
+        },
+        "queue_length": {
+          "mean": 0.8305266333333333,
+          "ci95_halfwidth": 0.019983394379251576
+        },
+        "wait": {
+          "mean": 11.424826666666666,
+          "ci95_halfwidth": 0.28214737021059616
+        },
+        "wait_sd": {
+          "mean": 17.84514666666667,
+          "ci95_halfwidth": 0.3365568037205943
+        },
+        "wait_cv": {
+          "mean": 1.5619885748444364,
+          "ci95_halfwidth": 0.012179561709945339
+        },
+        "positive_wait_cv": {
+          "mean": 0.9053096763509558,
+          "ci95_halfwidth": 0.007474741126235586
+        },
+        "wait_zero": {
+          "mean": 0.4710196002901169,
+          "ci95_halfwidth": 0.0020097254704852735
+        },
+        "stay": {
+          "mean": 26.60283,
+          "ci95_halfwidth": 0.49610631179421705
+        },
+        "stay_sd": {
+          "mean": 23.384106666666668,
+          "ci95_halfwidth": 0.42307214482108446
+        },
+        "stay_cv": {
+          "mean": 0.8790113555477604,
+          "ci95_halfwidth": 0.005982623562364995
+        },
+        "observed_lost": 58605,
+        "max_waiting": 2
+      }
+    },
+    "transient_010": {
+      "parameters": {
+        "name": "transient_010",
+        "family": "transient",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 1.5355555555555558,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.1,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 1,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.132559,
+          "ci95_halfwidth": null
+        },
+        "throughput": {
+          "mean": 0.08654342476008689,
+          "ci95_halfwidth": null
+        },
+        "loss_probability": {
+          "mean": 0.0010083333333333333,
+          "ci95_halfwidth": null
+        },
+        "queue_length": {
+          "mean": 0.01176349,
+          "ci95_halfwidth": null
+        },
+        "wait": {
+          "mean": 0.1359258,
+          "ci95_halfwidth": null
+        },
+        "wait_sd": {
+          "mean": 0.6529729,
+          "ci95_halfwidth": null
+        },
+        "wait_cv": {
+          "mean": 4.80389227063589,
+          "ci95_halfwidth": null
+        },
+        "positive_wait_cv": {
+          "mean": 0.9898244543423959,
+          "ci95_halfwidth": null
+        },
+        "wait_zero": {
+          "mean": 0.9177754235520816,
+          "ci95_halfwidth": null
+        },
+        "stay": {
+          "mean": 1.667631,
+          "ci95_halfwidth": null
+        },
+        "stay_sd": {
+          "mean": 1.668362,
+          "ci95_halfwidth": null
+        },
+        "stay_cv": {
+          "mean": 1.0004383463727886,
+          "ci95_halfwidth": null
+        },
+        "observed_lost": 121,
+        "max_waiting": 2
+      }
+    },
+    "transient_gap_010": {
+      "parameters": {
+        "name": "transient_gap_010",
+        "family": "transient_gap",
+        "incoming": "exp",
+        "gap": 37.5,
+        "service": "exp",
+        "service_time": 5,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.1,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 1,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.132559,
+          "ci95_halfwidth": null
+        },
+        "throughput": {
+          "mean": 0.02657844653581602,
+          "ci95_halfwidth": null
+        },
+        "loss_probability": {
+          "mean": 0.0010083333333333333,
+          "ci95_halfwidth": null
+        },
+        "queue_length": {
+          "mean": 0.01176349,
+          "ci95_halfwidth": null
+        },
+        "wait": {
+          "mean": 0.442595,
+          "ci95_halfwidth": null
+        },
+        "wait_sd": {
+          "mean": 2.126178,
+          "ci95_halfwidth": null
+        },
+        "wait_cv": {
+          "mean": 4.803890690134321,
+          "ci95_halfwidth": null
+        },
+        "positive_wait_cv": {
+          "mean": 0.9898238236294812,
+          "ci95_halfwidth": null
+        },
+        "wait_zero": {
+          "mean": 0.9177754235520816,
+          "ci95_halfwidth": null
+        },
+        "stay": {
+          "mean": 5.430056,
+          "ci95_halfwidth": null
+        },
+        "stay_sd": {
+          "mean": 5.432439,
+          "ci95_halfwidth": null
+        },
+        "stay_cv": {
+          "mean": 1.0004388536692805,
+          "ci95_halfwidth": null
+        },
+        "observed_lost": 121,
+        "max_waiting": 2
+      }
+    },
+    "transient_030": {
+      "parameters": {
+        "name": "transient_030",
+        "family": "transient",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 4.6066666666666665,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.3,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 1,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.3914852,
+          "ci95_halfwidth": null
+        },
+        "throughput": {
+          "mean": 0.08520371993364068,
+          "ci95_halfwidth": null
+        },
+        "loss_probability": {
+          "mean": 0.016475,
+          "ci95_halfwidth": null
+        },
+        "queue_length": {
+          "mean": 0.1092053,
+          "ci95_halfwidth": null
+        },
+        "wait": {
+          "mean": 1.281697,
+          "ci95_halfwidth": null
+        },
+        "wait_sd": {
+          "mean": 3.513459,
+          "ci95_halfwidth": null
+        },
+        "wait_cv": {
+          "mean": 2.7412555385555244,
+          "ci95_halfwidth": null
+        },
+        "positive_wait_cv": {
+          "mean": 0.9804426383914047,
+          "ci95_halfwidth": null
+        },
+        "wait_zero": {
+          "mean": 0.7696550672326581,
+          "ci95_halfwidth": null
+        },
+        "stay": {
+          "mean": 5.876394,
+          "ci95_halfwidth": null
+        },
+        "stay_sd": {
+          "mean": 5.789192,
+          "ci95_halfwidth": null
+        },
+        "stay_cv": {
+          "mean": 0.9851606274187877,
+          "ci95_halfwidth": null
+        },
+        "observed_lost": 1977,
+        "max_waiting": 2
+      }
+    },
+    "transient_gap_030": {
+      "parameters": {
+        "name": "transient_gap_030",
+        "family": "transient_gap",
+        "incoming": "exp",
+        "gap": 12.5,
+        "service": "exp",
+        "service_time": 5,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.3,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 1,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.3914852,
+          "ci95_halfwidth": null
+        },
+        "throughput": {
+          "mean": 0.0785010289612347,
+          "ci95_halfwidth": null
+        },
+        "loss_probability": {
+          "mean": 0.016475,
+          "ci95_halfwidth": null
+        },
+        "queue_length": {
+          "mean": 0.1092053,
+          "ci95_halfwidth": null
+        },
+        "wait": {
+          "mean": 1.391133,
+          "ci95_halfwidth": null
+        },
+        "wait_sd": {
+          "mean": 3.813451,
+          "ci95_halfwidth": null
+        },
+        "wait_cv": {
+          "mean": 2.7412555089987802,
+          "ci95_halfwidth": null
+        },
+        "positive_wait_cv": {
+          "mean": 0.9804426193559792,
+          "ci95_halfwidth": null
+        },
+        "wait_zero": {
+          "mean": 0.7696550672326581,
+          "ci95_halfwidth": null
+        },
+        "stay": {
+          "mean": 6.378141,
+          "ci95_halfwidth": null
+        },
+        "stay_sd": {
+          "mean": 6.283493,
+          "ci95_halfwidth": null
+        },
+        "stay_cv": {
+          "mean": 0.9851605663781969,
+          "ci95_halfwidth": null
+        },
+        "observed_lost": 1977,
+        "max_waiting": 2
+      }
+    },
+    "transient_070": {
+      "parameters": {
+        "name": "transient_070",
+        "family": "transient",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 10.74888888888889,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.7,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 1,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8253672,
+          "ci95_halfwidth": null
+        },
+        "throughput": {
+          "mean": 0.07692252159637768,
+          "ci95_halfwidth": null
+        },
+        "loss_probability": {
+          "mean": 0.11206666666666666,
+          "ci95_halfwidth": null
+        },
+        "queue_length": {
+          "mean": 0.4996222,
+          "ci95_halfwidth": null
+        },
+        "wait": {
+          "mean": 6.495137,
+          "ci95_halfwidth": null
+        },
+        "wait_sd": {
+          "mean": 11.60866,
+          "ci95_halfwidth": null
+        },
+        "wait_cv": {
+          "mean": 1.787284856347141,
+          "ci95_halfwidth": null
+        },
+        "positive_wait_cv": {
+          "mean": 0.92777648750569,
+          "ci95_halfwidth": null
+        },
+        "wait_zero": {
+          "mean": 0.5563668443576845,
+          "ci95_halfwidth": null
+        },
+        "stay": {
+          "mean": 17.22499,
+          "ci95_halfwidth": null
+        },
+        "stay_sd": {
+          "mean": 15.80636,
+          "ci95_halfwidth": null
+        },
+        "stay_cv": {
+          "mean": 0.9176411713446568,
+          "ci95_halfwidth": null
+        },
+        "observed_lost": 13448,
+        "max_waiting": 2
+      }
+    },
+    "transient_gap_070": {
+      "parameters": {
+        "name": "transient_gap_070",
+        "family": "transient_gap",
+        "incoming": "exp",
+        "gap": 5.357142857142858,
+        "service": "exp",
+        "service_time": 5,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.7,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 1,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8253672,
+          "ci95_halfwidth": null
+        },
+        "throughput": {
+          "mean": 0.16536629071049988,
+          "ci95_halfwidth": null
+        },
+        "loss_probability": {
+          "mean": 0.11206666666666666,
+          "ci95_halfwidth": null
+        },
+        "queue_length": {
+          "mean": 0.4996222,
+          "ci95_halfwidth": null
+        },
+        "wait": {
+          "mean": 3.021306,
+          "ci95_halfwidth": null
+        },
+        "wait_sd": {
+          "mean": 5.399935,
+          "ci95_halfwidth": null
+        },
+        "wait_cv": {
+          "mean": 1.7872850350146592,
+          "ci95_halfwidth": null
+        },
+        "positive_wait_cv": {
+          "mean": 0.927776640198997,
+          "ci95_halfwidth": null
+        },
+        "wait_zero": {
+          "mean": 0.5563668443576845,
+          "ci95_halfwidth": null
+        },
+        "stay": {
+          "mean": 8.012451,
+          "ci95_halfwidth": null
+        },
+        "stay_sd": {
+          "mean": 7.352554,
+          "ci95_halfwidth": null
+        },
+        "stay_cv": {
+          "mean": 0.917641056400844,
+          "ci95_halfwidth": null
+        },
+        "observed_lost": 13448,
+        "max_waiting": 2
+      }
+    },
+    "transient_090": {
+      "parameters": {
+        "name": "transient_090",
+        "family": "transient",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 1,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.9878783,
+          "ci95_halfwidth": null
+        },
+        "throughput": {
+          "mean": 0.07161559946895793,
+          "ci95_halfwidth": null
+        },
+        "loss_probability": {
+          "mean": 0.17331666666666667,
+          "ci95_halfwidth": null
+        },
+        "queue_length": {
+          "mean": 0.7140807,
+          "ci95_halfwidth": null
+        },
+        "wait": {
+          "mean": 9.971025,
+          "ci95_halfwidth": null
+        },
+        "wait_sd": {
+          "mean": 15.968,
+          "ci95_halfwidth": null
+        },
+        "wait_cv": {
+          "mean": 1.6014401729009806,
+          "ci95_halfwidth": null
+        },
+        "positive_wait_cv": {
+          "mean": 0.9164048637817371,
+          "ci95_halfwidth": null
+        },
+        "wait_zero": {
+          "mean": 0.4838712929174815,
+          "ci95_halfwidth": null
+        },
+        "stay": {
+          "mean": 23.7652,
+          "ci95_halfwidth": null
+        },
+        "stay_sd": {
+          "mean": 21.10864,
+          "ci95_halfwidth": null
+        },
+        "stay_cv": {
+          "mean": 0.8882163836197465,
+          "ci95_halfwidth": null
+        },
+        "observed_lost": 20798,
+        "max_waiting": 2
+      }
+    },
+    "transient_gap_090": {
+      "parameters": {
+        "name": "transient_gap_090",
+        "family": "transient_gap",
+        "incoming": "exp",
+        "gap": 4.166666666666667,
+        "service": "exp",
+        "service_time": 5,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 1,
+        "checkpoints": [
+          10,
+          50,
+          100,
+          200,
+          300,
+          600,
+          1200,
+          2500,
+          5000,
+          10000
+        ]
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.9878783,
+          "ci95_halfwidth": null
+        },
+        "throughput": {
+          "mean": 0.19794543959463506,
+          "ci95_halfwidth": null
+        },
+        "loss_probability": {
+          "mean": 0.17331666666666667,
+          "ci95_halfwidth": null
+        },
+        "queue_length": {
+          "mean": 0.7140807,
+          "ci95_halfwidth": null
+        },
+        "wait": {
+          "mean": 3.607462,
+          "ci95_halfwidth": null
+        },
+        "wait_sd": {
+          "mean": 5.777134,
+          "ci95_halfwidth": null
+        },
+        "wait_cv": {
+          "mean": 1.601440015168559,
+          "ci95_halfwidth": null
+        },
+        "positive_wait_cv": {
+          "mean": 0.9164047215153402,
+          "ci95_halfwidth": null
+        },
+        "wait_zero": {
+          "mean": 0.4838712929174815,
+          "ci95_halfwidth": null
+        },
+        "stay": {
+          "mean": 8.59812,
+          "ci95_halfwidth": null
+        },
+        "stay_sd": {
+          "mean": 7.636989,
+          "ci95_halfwidth": null
+        },
+        "stay_cv": {
+          "mean": 0.8882161449247045,
+          "ci95_halfwidth": null
+        },
+        "observed_lost": 20798,
+        "max_waiting": 2
+      }
+    },
+    "service_e2_050": {
+      "parameters": {
+        "name": "service_e2_050",
+        "family": "service",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "e2",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6400387666666667,
+          "ci95_halfwidth": 0.0070127446631824495
+        },
+        "throughput": {
+          "mean": 0.08353514264589249,
+          "ci95_halfwidth": 0.0009780028783923814
+        },
+        "loss_probability": {
+          "mean": 0.03963055555555556,
+          "ci95_halfwidth": 0.0004244498540685712
+        },
+        "queue_length": {
+          "mean": 0.24609163333333334,
+          "ci95_halfwidth": 0.00691174708950685
+        },
+        "wait": {
+          "mean": 2.9459043333333335,
+          "ci95_halfwidth": 0.04824949642493945
+        },
+        "wait_sd": {
+          "mean": 5.588641333333333,
+          "ci95_halfwidth": 0.03634315611455306
+        },
+        "wait_cv": {
+          "mean": 1.8971216500108532,
+          "ci95_halfwidth": 0.018720703734657586
+        },
+        "positive_wait_cv": {
+          "mean": 0.840546289612004,
+          "ci95_halfwidth": 0.006673370877437552
+        },
+        "wait_zero": {
+          "mean": 0.6289392558848526,
+          "ci95_halfwidth": 0.0033929722195971492
+        },
+        "stay": {
+          "mean": 10.607843333333333,
+          "ci95_halfwidth": 0.060964618576988705
+        },
+        "stay_sd": {
+          "mean": 7.778991,
+          "ci95_halfwidth": 0.0381149706173531
+        },
+        "stay_cv": {
+          "mean": 0.733324937327868,
+          "ci95_halfwidth": 0.001265302465244729
+        },
+        "observed_lost": 14267,
+        "max_waiting": 2
+      }
+    },
+    "service_e2_075": {
+      "parameters": {
+        "name": "service_e2_075",
+        "family": "service",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "e2",
+        "service_time": 11.516666666666667,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8970850666666667,
+          "ci95_halfwidth": 0.010931658399460451
+        },
+        "throughput": {
+          "mean": 0.07802658967436207,
+          "ci95_halfwidth": 0.0011767929264604403
+        },
+        "loss_probability": {
+          "mean": 0.10296944444444445,
+          "ci95_halfwidth": 0.003507116913721634
+        },
+        "queue_length": {
+          "mean": 0.5147121,
+          "ci95_halfwidth": 0.017875082759873227
+        },
+        "wait": {
+          "mean": 6.596484,
+          "ci95_halfwidth": 0.16165824052379832
+        },
+        "wait_sd": {
+          "mean": 10.003242333333333,
+          "ci95_halfwidth": 0.16202479094731126
+        },
+        "wait_cv": {
+          "mean": 1.5164917824993236,
+          "ci95_halfwidth": 0.019319012801069648
+        },
+        "positive_wait_cv": {
+          "mean": 0.8061145553326226,
+          "ci95_halfwidth": 0.008123482891950732
+        },
+        "wait_zero": {
+          "mean": 0.5000091195315884,
+          "ci95_halfwidth": 0.006133318196689182
+        },
+        "stay": {
+          "mean": 18.093723333333333,
+          "ci95_halfwidth": 0.2245911602088936
+        },
+        "stay_sd": {
+          "mean": 12.8872,
+          "ci95_halfwidth": 0.22619833083093518
+        },
+        "stay_cv": {
+          "mean": 0.7122438635333801,
+          "ci95_halfwidth": 0.0060436810604933226
+        },
+        "observed_lost": 37069,
+        "max_waiting": 2
+      }
+    },
+    "service_e2_095": {
+      "parameters": {
+        "name": "service_e2_095",
+        "family": "service",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "e2",
+        "service_time": 14.587777777777779,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.95,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.0601686666666668,
+          "ci95_halfwidth": 0.010178226713959007
+        },
+        "throughput": {
+          "mean": 0.0727571227628717,
+          "ci95_halfwidth": 0.0008362041861027505
+        },
+        "loss_probability": {
+          "mean": 0.16354722222222223,
+          "ci95_halfwidth": 0.0013989857092161907
+        },
+        "queue_length": {
+          "mean": 0.7366988999999999,
+          "ci95_halfwidth": 0.01649099035842496
+        },
+        "wait": {
+          "mean": 10.12585,
+          "ci95_halfwidth": 0.16281679398570295
+        },
+        "wait_sd": {
+          "mean": 13.585906666666666,
+          "ci95_halfwidth": 0.10883532210643672
+        },
+        "wait_cv": {
+          "mean": 1.3417259263133297,
+          "ci95_halfwidth": 0.012732317738440592
+        },
+        "positive_wait_cv": {
+          "mean": 0.7790729998775903,
+          "ci95_halfwidth": 0.004132532724838166
+        },
+        "wait_zero": {
+          "mean": 0.42613104206117697,
+          "ci95_halfwidth": 0.004817378041491181
+        },
+        "stay": {
+          "mean": 24.697323333333333,
+          "ci95_halfwidth": 0.2804534416146381
+        },
+        "stay_sd": {
+          "mean": 17.040183333333335,
+          "ci95_halfwidth": 0.1881270703268052
+        },
+        "stay_cv": {
+          "mean": 0.6899618641144335,
+          "ci95_halfwidth": 0.003333608575282683
+        },
+        "observed_lost": 58877,
+        "max_waiting": 2
+      }
+    },
+    "service_e2_099": {
+      "parameters": {
+        "name": "service_e2_099",
+        "family": "service",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "e2",
+        "service_time": 15.202,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.99,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.0884179999999999,
+          "ci95_halfwidth": 0.010247641553132049
+        },
+        "throughput": {
+          "mean": 0.07167032627320997,
+          "ci95_halfwidth": 0.000750689347561954
+        },
+        "loss_probability": {
+          "mean": 0.17603333333333335,
+          "ci95_halfwidth": 0.0015394045563093942
+        },
+        "queue_length": {
+          "mean": 0.7822593333333333,
+          "ci95_halfwidth": 0.01942270862706933
+        },
+        "wait": {
+          "mean": 10.91465,
+          "ci95_halfwidth": 0.2343109043609284
+        },
+        "wait_sd": {
+          "mean": 14.358943333333334,
+          "ci95_halfwidth": 0.1509261661043662
+        },
+        "wait_cv": {
+          "mean": 1.3156128406339342,
+          "ci95_halfwidth": 0.023123549190316988
+        },
+        "positive_wait_cv": {
+          "mean": 0.7781262702611086,
+          "ci95_halfwidth": 0.008249694977648664
+        },
+        "wait_zero": {
+          "mean": 0.41207988139201795,
+          "ci95_halfwidth": 0.00950524356939794
+        },
+        "stay": {
+          "mean": 26.101063333333332,
+          "ci95_halfwidth": 0.3815530058878772
+        },
+        "stay_sd": {
+          "mean": 17.939,
+          "ci95_halfwidth": 0.2717544651971525
+        },
+        "stay_cv": {
+          "mean": 0.6872951006377056,
+          "ci95_halfwidth": 0.008531973519263266
+        },
+        "observed_lost": 63372,
+        "max_waiting": 2
+      }
+    },
+    "service_h2_050": {
+      "parameters": {
+        "name": "service_h2_050",
+        "family": "service",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "h2",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.5974453,
+          "ci95_halfwidth": 0.011090064533196563
+        },
+        "throughput": {
+          "mean": 0.07807449334162929,
+          "ci95_halfwidth": 0.0009048457293764629
+        },
+        "loss_probability": {
+          "mean": 0.10241666666666667,
+          "ci95_halfwidth": 0.0028696376655271277
+        },
+        "queue_length": {
+          "mean": 0.39108156666666666,
+          "ci95_halfwidth": 0.01677676925191096
+        },
+        "wait": {
+          "mean": 5.009298,
+          "ci95_halfwidth": 0.2398957564755659
+        },
+        "wait_sd": {
+          "mean": 16.463766666666668,
+          "ci95_halfwidth": 0.3623128634720583
+        },
+        "wait_cv": {
+          "mean": 3.287087973113743,
+          "ci95_halfwidth": 0.08807957114297511
+        },
+        "positive_wait_cv": {
+          "mean": 1.5724361174320056,
+          "ci95_halfwidth": 0.04231495890112529
+        },
+        "wait_zero": {
+          "mean": 0.7058263187145534,
+          "ci95_halfwidth": 0.0034704778684538067
+        },
+        "stay": {
+          "mean": 12.661936666666668,
+          "ci95_halfwidth": 0.4367273170065213
+        },
+        "stay_sd": {
+          "mean": 22.455986666666668,
+          "ci95_halfwidth": 0.46123082711312463
+        },
+        "stay_cv": {
+          "mean": 1.7735969591882403,
+          "ci95_halfwidth": 0.025861528756380845
+        },
+        "observed_lost": 36870,
+        "max_waiting": 2
+      }
+    },
+    "service_h2_075": {
+      "parameters": {
+        "name": "service_h2_075",
+        "family": "service",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "h2",
+        "service_time": 11.516666666666667,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8168243333333334,
+          "ci95_halfwidth": 0.010849496985235038
+        },
+        "throughput": {
+          "mean": 0.07108794955367521,
+          "ci95_halfwidth": 0.0006937353304262315
+        },
+        "loss_probability": {
+          "mean": 0.18272777777777777,
+          "ci95_halfwidth": 0.00360070362972362
+        },
+        "queue_length": {
+          "mean": 0.6559344666666667,
+          "ci95_halfwidth": 0.015216576154620643
+        },
+        "wait": {
+          "mean": 9.227168333333333,
+          "ci95_halfwidth": 0.2286459124836918
+        },
+        "wait_sd": {
+          "mean": 26.460493333333336,
+          "ci95_halfwidth": 0.11081687180826028
+        },
+        "wait_cv": {
+          "mean": 2.867871477078977,
+          "ci95_halfwidth": 0.07532040224886667
+        },
+        "positive_wait_cv": {
+          "mean": 1.5896984063912944,
+          "ci95_halfwidth": 0.04377253402068007
+        },
+        "wait_zero": {
+          "mean": 0.61762961539265,
+          "ci95_halfwidth": 0.002979557635185403
+        },
+        "stay": {
+          "mean": 20.71770666666667,
+          "ci95_halfwidth": 0.4387179933968775
+        },
+        "stay_sd": {
+          "mean": 35.008160000000004,
+          "ci95_halfwidth": 0.10920954942379733
+        },
+        "stay_cv": {
+          "mean": 1.6898506389858927,
+          "ci95_halfwidth": 0.03561438432652556
+        },
+        "observed_lost": 65782,
+        "max_waiting": 2
+      }
+    },
+    "service_h2_095": {
+      "parameters": {
+        "name": "service_h2_095",
+        "family": "service",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "h2",
+        "service_time": 14.587777777777779,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.95,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.9586417333333334,
+          "ci95_halfwidth": 0.012360631857248077
+        },
+        "throughput": {
+          "mean": 0.06576854416157399,
+          "ci95_halfwidth": 0.0009401310527507367
+        },
+        "loss_probability": {
+          "mean": 0.24389166666666667,
+          "ci95_halfwidth": 0.008091703922096396
+        },
+        "queue_length": {
+          "mean": 0.8522396333333333,
+          "ci95_halfwidth": 0.023122861165605933
+        },
+        "wait": {
+          "mean": 12.95984,
+          "ci95_halfwidth": 0.46860005335133104
+        },
+        "wait_sd": {
+          "mean": 34.73151666666667,
+          "ci95_halfwidth": 0.1872624770052512
+        },
+        "wait_cv": {
+          "mean": 2.680256293208328,
+          "ci95_halfwidth": 0.08263156276751242
+        },
+        "positive_wait_cv": {
+          "mean": 1.6109499203478226,
+          "ci95_halfwidth": 0.04750108462802998
+        },
+        "wait_zero": {
+          "mean": 0.5606759221873078,
+          "ci95_halfwidth": 0.005640115968807142
+        },
+        "stay": {
+          "mean": 27.536606666666664,
+          "ci95_halfwidth": 0.8072705183725819
+        },
+        "stay_sd": {
+          "mean": 45.335543333333334,
+          "ci95_halfwidth": 0.38690574416244183
+        },
+        "stay_cv": {
+          "mean": 1.6464918126263448,
+          "ci95_halfwidth": 0.03839963188608074
+        },
+        "observed_lost": 87801,
+        "max_waiting": 2
+      }
+    },
+    "service_h2_099": {
+      "parameters": {
+        "name": "service_h2_099",
+        "family": "service",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "h2",
+        "service_time": 15.202,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.99,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.9835614666666667,
+          "ci95_halfwidth": 0.016994675588299635
+        },
+        "throughput": {
+          "mean": 0.06475436002906597,
+          "ci95_halfwidth": 0.0007400181625693572
+        },
+        "loss_probability": {
+          "mean": 0.2555472222222222,
+          "ci95_halfwidth": 0.006966654764193263
+        },
+        "queue_length": {
+          "mean": 0.8879909,
+          "ci95_halfwidth": 0.024952646458451497
+        },
+        "wait": {
+          "mean": 13.71512,
+          "ci95_halfwidth": 0.5091597501060973
+        },
+        "wait_sd": {
+          "mean": 36.320946666666664,
+          "ci95_halfwidth": 0.3628848987136935
+        },
+        "wait_cv": {
+          "mean": 2.648526989371585,
+          "ci95_halfwidth": 0.07125529064408125
+        },
+        "positive_wait_cv": {
+          "mean": 1.6074498213223758,
+          "ci95_halfwidth": 0.04323104727540345
+        },
+        "wait_zero": {
+          "mean": 0.5528171520396173,
+          "ci95_halfwidth": 0.006735270130536676
+        },
+        "stay": {
+          "mean": 28.90435,
+          "ci95_halfwidth": 0.9038405345828331
+        },
+        "stay_sd": {
+          "mean": 47.333803333333336,
+          "ci95_halfwidth": 0.4777629912749772
+        },
+        "stay_cv": {
+          "mean": 1.6377238114439279,
+          "ci95_halfwidth": 0.03699072464677466
+        },
+        "observed_lost": 91997,
+        "max_waiting": 2
+      }
+    },
+    "buffer_050_000": {
+      "parameters": {
+        "name": "buffer_050_000",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          0,
+          0
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.4775852,
+          "ci95_halfwidth": 0.006392176777601992
+        },
+        "throughput": {
+          "mean": 0.0622772531052151,
+          "ci95_halfwidth": 0.0005997791459268496
+        },
+        "loss_probability": {
+          "mean": 0.28402222222222223,
+          "ci95_halfwidth": 0.0018124526310050691
+        },
+        "queue_length": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "wait": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "wait_sd": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "wait_cv": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "positive_wait_cv": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "wait_zero": {
+          "mean": 1.0,
+          "ci95_halfwidth": 0.0
+        },
+        "stay": {
+          "mean": 7.668808333333334,
+          "ci95_halfwidth": 0.14599572993123724
+        },
+        "stay_sd": {
+          "mean": 7.668992,
+          "ci95_halfwidth": 0.11736765313202321
+        },
+        "stay_cv": {
+          "mean": 1.000037764011391,
+          "ci95_halfwidth": 0.011318231827988029
+        },
+        "observed_lost": 102248,
+        "max_waiting": 1
+      }
+    },
+    "buffer_050_001": {
+      "parameters": {
+        "name": "buffer_050_001",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          1,
+          1
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.5913723,
+          "ci95_halfwidth": 0.004235573726432792
+        },
+        "throughput": {
+          "mean": 0.07720849673805373,
+          "ci95_halfwidth": 0.0009674545354873542
+        },
+        "loss_probability": {
+          "mean": 0.11237222222222222,
+          "ci95_halfwidth": 0.0036283916482717856
+        },
+        "queue_length": {
+          "mean": 0.16623153333333332,
+          "ci95_halfwidth": 0.0029413966096984326
+        },
+        "wait": {
+          "mean": 2.1530953333333334,
+          "ci95_halfwidth": 0.04963197668279707
+        },
+        "wait_sd": {
+          "mean": 5.319064666666667,
+          "ci95_halfwidth": 0.11196673750045648
+        },
+        "wait_cv": {
+          "mean": 2.4704392492501754,
+          "ci95_halfwidth": 0.005212983599899988
+        },
+        "positive_wait_cv": {
+          "mean": 0.9977270843097824,
+          "ci95_halfwidth": 0.009466143378750768
+        },
+        "wait_zero": {
+          "mean": 0.7190689416050632,
+          "ci95_halfwidth": 0.003091040873791032
+        },
+        "stay": {
+          "mean": 9.812659,
+          "ci95_halfwidth": 0.16569655295832061
+        },
+        "stay_sd": {
+          "mean": 9.319801,
+          "ci95_halfwidth": 0.15653007446410686
+        },
+        "stay_cv": {
+          "mean": 0.9497736470486828,
+          "ci95_halfwidth": 0.0021326118726021324
+        },
+        "observed_lost": 40454,
+        "max_waiting": 1
+      }
+    },
+    "buffer_050_002": {
+      "parameters": {
+        "name": "buffer_050_002",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          2
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6320713,
+          "ci95_halfwidth": 0.006826288408695795
+        },
+        "throughput": {
+          "mean": 0.08257787574837688,
+          "ci95_halfwidth": 0.000925310890009366
+        },
+        "loss_probability": {
+          "mean": 0.05064166666666667,
+          "ci95_halfwidth": 0.00037322536648761015
+        },
+        "queue_length": {
+          "mean": 0.29597733333333337,
+          "ci95_halfwidth": 0.004529958695504691
+        },
+        "wait": {
+          "mean": 3.584337,
+          "ci95_halfwidth": 0.06218365695575035
+        },
+        "wait_sd": {
+          "mean": 7.396204666666667,
+          "ci95_halfwidth": 0.11208122431093294
+        },
+        "wait_cv": {
+          "mean": 2.0634882698801724,
+          "ci95_halfwidth": 0.0068049575841068405
+        },
+        "positive_wait_cv": {
+          "mean": 0.936869554204904,
+          "ci95_halfwidth": 0.006058390375236878
+        },
+        "wait_zero": {
+          "mean": 0.6428784999361744,
+          "ci95_halfwidth": 0.004067127903684977
+        },
+        "stay": {
+          "mean": 11.238686666666666,
+          "ci95_halfwidth": 0.17988673072612793
+        },
+        "stay_sd": {
+          "mean": 10.621203333333334,
+          "ci95_halfwidth": 0.17924530531419203
+        },
+        "stay_cv": {
+          "mean": 0.9450559201377876,
+          "ci95_halfwidth": 0.0008493685542010728
+        },
+        "observed_lost": 18231,
+        "max_waiting": 2
+      }
+    },
+    "buffer_050_004": {
+      "parameters": {
+        "name": "buffer_050_004",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          4,
+          4
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.657565,
+          "ci95_halfwidth": 0.005974409948713182
+        },
+        "throughput": {
+          "mean": 0.08591151039573518,
+          "ci95_halfwidth": 0.001049896895995444
+        },
+        "loss_probability": {
+          "mean": 0.012322222222222222,
+          "ci95_halfwidth": 0.0012782767972824506
+        },
+        "queue_length": {
+          "mean": 0.4431777333333333,
+          "ci95_halfwidth": 0.011081580839228682
+        },
+        "wait": {
+          "mean": 5.158625,
+          "ci95_halfwidth": 0.12060019666011304
+        },
+        "wait_sd": {
+          "mean": 9.915480333333333,
+          "ci95_halfwidth": 0.1989533247270917
+        },
+        "wait_cv": {
+          "mean": 1.9221344077081044,
+          "ci95_halfwidth": 0.009658022856990958
+        },
+        "positive_wait_cv": {
+          "mean": 0.9406960773619214,
+          "ci95_halfwidth": 0.006757621070674916
+        },
+        "wait_zero": {
+          "mean": 0.5984910040090371,
+          "ci95_halfwidth": 0.004482680310453115
+        },
+        "stay": {
+          "mean": 12.812710000000001,
+          "ci95_halfwidth": 0.20913029921326154
+        },
+        "stay_sd": {
+          "mean": 12.52698,
+          "ci95_halfwidth": 0.24340059883718002
+        },
+        "stay_cv": {
+          "mean": 0.9776942717477588,
+          "ci95_halfwidth": 0.003413955780114941
+        },
+        "observed_lost": 4436,
+        "max_waiting": 4
+      }
+    },
+    "buffer_050_008": {
+      "parameters": {
+        "name": "buffer_050_008",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          8,
+          8
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6653477333333333,
+          "ci95_halfwidth": 0.006396241769733031
+        },
+        "throughput": {
+          "mean": 0.08692628844313977,
+          "ci95_halfwidth": 0.0010042660533730915
+        },
+        "loss_probability": {
+          "mean": 0.00065,
+          "ci95_halfwidth": 0.0003227249999999999
+        },
+        "queue_length": {
+          "mean": 0.5152061333333333,
+          "ci95_halfwidth": 0.025122533513969418
+        },
+        "wait": {
+          "mean": 5.927128333333333,
+          "ci95_halfwidth": 0.29935130119121595
+        },
+        "wait_sd": {
+          "mean": 11.549199999999999,
+          "ci95_halfwidth": 0.6231903092058213
+        },
+        "wait_cv": {
+          "mean": 1.9485327425378725,
+          "ci95_halfwidth": 0.038055848868644784
+        },
+        "positive_wait_cv": {
+          "mean": 0.9909269246908152,
+          "ci95_halfwidth": 0.02173541878391632
+        },
+        "wait_zero": {
+          "mean": 0.5868036947958967,
+          "ci95_halfwidth": 0.007707936450988195
+        },
+        "stay": {
+          "mean": 13.58138,
+          "ci95_halfwidth": 0.3900309420618587
+        },
+        "stay_sd": {
+          "mean": 13.846436666666666,
+          "ci95_halfwidth": 0.583970734592058
+        },
+        "stay_cv": {
+          "mean": 1.019478187907968,
+          "ci95_halfwidth": 0.016592072871446283
+        },
+        "observed_lost": 234,
+        "max_waiting": 8
+      }
+    },
+    "buffer_050_016": {
+      "parameters": {
+        "name": "buffer_050_016",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          16,
+          16
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6657549333333334,
+          "ci95_halfwidth": 0.006221091604200271
+        },
+        "throughput": {
+          "mean": 0.08697968288802858,
+          "ci95_halfwidth": 0.0009864764531558425
+        },
+        "loss_probability": {
+          "mean": 1.1111111111111112e-05,
+          "ci95_halfwidth": 4.7811111111111116e-05
+        },
+        "queue_length": {
+          "mean": 0.5304197333333334,
+          "ci95_halfwidth": 0.034514483937579415
+        },
+        "wait": {
+          "mean": 6.097021333333333,
+          "ci95_halfwidth": 0.4061155611765762
+        },
+        "wait_sd": {
+          "mean": 12.019446666666667,
+          "ci95_halfwidth": 1.0725164421757214
+        },
+        "wait_cv": {
+          "mean": 1.9710606027384958,
+          "ci95_halfwidth": 0.04938787053584009
+        },
+        "positive_wait_cv": {
+          "mean": 1.0115278835645651,
+          "ci95_halfwidth": 0.04722314865378024
+        },
+        "wait_zero": {
+          "mean": 0.5858287116052017,
+          "ci95_halfwidth": 0.00391246663083944
+        },
+        "stay": {
+          "mean": 13.751253333333333,
+          "ci95_halfwidth": 0.4907651021746978
+        },
+        "stay_sd": {
+          "mean": 14.242750000000001,
+          "ci95_halfwidth": 0.9606099893548234
+        },
+        "stay_cv": {
+          "mean": 1.035616118427715,
+          "ci95_halfwidth": 0.03265488476052074
+        },
+        "observed_lost": 4,
+        "max_waiting": 16
+      }
+    },
+    "buffer_050_032": {
+      "parameters": {
+        "name": "buffer_050_032",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          32,
+          32
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6657573999999999,
+          "ci95_halfwidth": 0.0062310198306567924
+        },
+        "throughput": {
+          "mean": 0.08698071147860442,
+          "ci95_halfwidth": 0.0009857695230185604
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 0.5302972333333333,
+          "ci95_halfwidth": 0.03399382219983604
+        },
+        "wait": {
+          "mean": 6.0955363333333334,
+          "ci95_halfwidth": 0.3997256267958207
+        },
+        "wait_sd": {
+          "mean": 12.04805,
+          "ci95_halfwidth": 1.1944013557300348
+        },
+        "wait_cv": {
+          "mean": 1.976084923620886,
+          "ci95_halfwidth": 0.06874182561176295
+        },
+        "positive_wait_cv": {
+          "mean": 1.0151666946140283,
+          "ci95_halfwidth": 0.061866247684901725
+        },
+        "wait_zero": {
+          "mean": 0.5859888888888889,
+          "ci95_halfwidth": 0.0032389381298204146
+        },
+        "stay": {
+          "mean": 13.749706666666667,
+          "ci95_halfwidth": 0.4841623532381988
+        },
+        "stay_sd": {
+          "mean": 14.271573333333334,
+          "ci95_halfwidth": 1.0836193022076865
+        },
+        "stay_cv": {
+          "mean": 1.037795208117452,
+          "ci95_halfwidth": 0.041947119609201965
+        },
+        "observed_lost": 0,
+        "max_waiting": 18
+      }
+    },
+    "buffer_050_064": {
+      "parameters": {
+        "name": "buffer_050_064",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          64,
+          64
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6657573999999999,
+          "ci95_halfwidth": 0.0062310198306567924
+        },
+        "throughput": {
+          "mean": 0.08698071147860442,
+          "ci95_halfwidth": 0.0009857695230185604
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 0.5302972333333333,
+          "ci95_halfwidth": 0.03399382219983604
+        },
+        "wait": {
+          "mean": 6.0955363333333334,
+          "ci95_halfwidth": 0.3997256267958207
+        },
+        "wait_sd": {
+          "mean": 12.04805,
+          "ci95_halfwidth": 1.1944013557300348
+        },
+        "wait_cv": {
+          "mean": 1.976084923620886,
+          "ci95_halfwidth": 0.06874182561176295
+        },
+        "positive_wait_cv": {
+          "mean": 1.0151666946140283,
+          "ci95_halfwidth": 0.061866247684901725
+        },
+        "wait_zero": {
+          "mean": 0.5859888888888889,
+          "ci95_halfwidth": 0.0032389381298204146
+        },
+        "stay": {
+          "mean": 13.749706666666667,
+          "ci95_halfwidth": 0.4841623532381988
+        },
+        "stay_sd": {
+          "mean": 14.271573333333334,
+          "ci95_halfwidth": 1.0836193022076865
+        },
+        "stay_cv": {
+          "mean": 1.037795208117452,
+          "ci95_halfwidth": 0.041947119609201965
+        },
+        "observed_lost": 0,
+        "max_waiting": 18
+      }
+    },
+    "buffer_050_128": {
+      "parameters": {
+        "name": "buffer_050_128",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          128,
+          128
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6657573999999999,
+          "ci95_halfwidth": 0.0062310198306567924
+        },
+        "throughput": {
+          "mean": 0.08698071147860442,
+          "ci95_halfwidth": 0.0009857695230185604
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 0.5302972333333333,
+          "ci95_halfwidth": 0.03399382219983604
+        },
+        "wait": {
+          "mean": 6.0955363333333334,
+          "ci95_halfwidth": 0.3997256267958207
+        },
+        "wait_sd": {
+          "mean": 12.04805,
+          "ci95_halfwidth": 1.1944013557300348
+        },
+        "wait_cv": {
+          "mean": 1.976084923620886,
+          "ci95_halfwidth": 0.06874182561176295
+        },
+        "positive_wait_cv": {
+          "mean": 1.0151666946140283,
+          "ci95_halfwidth": 0.061866247684901725
+        },
+        "wait_zero": {
+          "mean": 0.5859888888888889,
+          "ci95_halfwidth": 0.0032389381298204146
+        },
+        "stay": {
+          "mean": 13.749706666666667,
+          "ci95_halfwidth": 0.4841623532381988
+        },
+        "stay_sd": {
+          "mean": 14.271573333333334,
+          "ci95_halfwidth": 1.0836193022076865
+        },
+        "stay_cv": {
+          "mean": 1.037795208117452,
+          "ci95_halfwidth": 0.041947119609201965
+        },
+        "observed_lost": 0,
+        "max_waiting": 18
+      }
+    },
+    "buffer_050_256": {
+      "parameters": {
+        "name": "buffer_050_256",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          256,
+          256
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6657573999999999,
+          "ci95_halfwidth": 0.0062310198306567924
+        },
+        "throughput": {
+          "mean": 0.08698071147860442,
+          "ci95_halfwidth": 0.0009857695230185604
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 0.5302972333333333,
+          "ci95_halfwidth": 0.03399382219983604
+        },
+        "wait": {
+          "mean": 6.0955363333333334,
+          "ci95_halfwidth": 0.3997256267958207
+        },
+        "wait_sd": {
+          "mean": 12.04805,
+          "ci95_halfwidth": 1.1944013557300348
+        },
+        "wait_cv": {
+          "mean": 1.976084923620886,
+          "ci95_halfwidth": 0.06874182561176295
+        },
+        "positive_wait_cv": {
+          "mean": 1.0151666946140283,
+          "ci95_halfwidth": 0.061866247684901725
+        },
+        "wait_zero": {
+          "mean": 0.5859888888888889,
+          "ci95_halfwidth": 0.0032389381298204146
+        },
+        "stay": {
+          "mean": 13.749706666666667,
+          "ci95_halfwidth": 0.4841623532381988
+        },
+        "stay_sd": {
+          "mean": 14.271573333333334,
+          "ci95_halfwidth": 1.0836193022076865
+        },
+        "stay_cv": {
+          "mean": 1.037795208117452,
+          "ci95_halfwidth": 0.041947119609201965
+        },
+        "observed_lost": 0,
+        "max_waiting": 18
+      }
+    },
+    "buffer_090_000": {
+      "parameters": {
+        "name": "buffer_090_000",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          0,
+          0
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7057834333333334,
+          "ci95_halfwidth": 0.009291621748739556
+        },
+        "throughput": {
+          "mean": 0.05114725212575742,
+          "ci95_halfwidth": 0.0009481517675959075
+        },
+        "loss_probability": {
+          "mean": 0.41198055555555557,
+          "ci95_halfwidth": 0.006273067851870773
+        },
+        "queue_length": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "wait": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "wait_sd": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "wait_cv": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "positive_wait_cv": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "wait_zero": {
+          "mean": 1.0,
+          "ci95_halfwidth": 0.0
+        },
+        "stay": {
+          "mean": 13.799703333333333,
+          "ci95_halfwidth": 0.4001700594794007
+        },
+        "stay_sd": {
+          "mean": 13.806516666666667,
+          "ci95_halfwidth": 0.33188730144859924
+        },
+        "stay_cv": {
+          "mean": 1.000513512537513,
+          "ci95_halfwidth": 0.010249062415803529
+        },
+        "observed_lost": 148313,
+        "max_waiting": 1
+      }
+    },
+    "buffer_090_001": {
+      "parameters": {
+        "name": "buffer_090_001",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          1,
+          1
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.9134366666666667,
+          "ci95_halfwidth": 0.010969866568748161
+        },
+        "throughput": {
+          "mean": 0.0661612302351913,
+          "ci95_halfwidth": 0.0007350952996701233
+        },
+        "loss_probability": {
+          "mean": 0.2393722222222222,
+          "ci95_halfwidth": 0.0018185906871827301
+        },
+        "queue_length": {
+          "mean": 0.3629691,
+          "ci95_halfwidth": 0.005727466265061317
+        },
+        "wait": {
+          "mean": 5.486166333333333,
+          "ci95_halfwidth": 0.11218408666401349
+        },
+        "wait_sd": {
+          "mean": 11.000946666666668,
+          "ci95_halfwidth": 0.12848393967511784
+        },
+        "wait_cv": {
+          "mean": 2.005254566395385,
+          "ci95_halfwidth": 0.01771770980707378
+        },
+        "positive_wait_cv": {
+          "mean": 0.999599359085367,
+          "ci95_halfwidth": 0.00466118887503405
+        },
+        "wait_zero": {
+          "mean": 0.6018301537767944,
+          "ci95_halfwidth": 0.005691080968762559
+        },
+        "stay": {
+          "mean": 19.292713333333335,
+          "ci95_halfwidth": 0.36587427686697777
+        },
+        "stay_sd": {
+          "mean": 17.644766666666666,
+          "ci95_halfwidth": 0.30417737912279036
+        },
+        "stay_cv": {
+          "mean": 0.9145859658699027,
+          "ci95_halfwidth": 0.004107678639965936
+        },
+        "observed_lost": 86174,
+        "max_waiting": 1
+      }
+    },
+    "buffer_090_002": {
+      "parameters": {
+        "name": "buffer_090_002",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          2,
+          2
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.0051173333333332,
+          "ci95_halfwidth": 0.012068836602468524
+        },
+        "throughput": {
+          "mean": 0.07285816789130917,
+          "ci95_halfwidth": 0.000768830611182378
+        },
+        "loss_probability": {
+          "mean": 0.16238055555555556,
+          "ci95_halfwidth": 0.0012380793155829719
+        },
+        "queue_length": {
+          "mean": 0.7603785333333334,
+          "ci95_halfwidth": 0.02000174710454493
+        },
+        "wait": {
+          "mean": 10.436653333333334,
+          "ci95_halfwidth": 0.28451242751923106
+        },
+        "wait_sd": {
+          "mean": 16.26656,
+          "ci95_halfwidth": 0.3016069586033586
+        },
+        "wait_cv": {
+          "mean": 1.5586556541665166,
+          "ci95_halfwidth": 0.02582904468935145
+        },
+        "positive_wait_cv": {
+          "mean": 0.9014646303304809,
+          "ci95_halfwidth": 0.016296764883347824
+        },
+        "wait_zero": {
+          "mean": 0.47143457115600995,
+          "ci95_halfwidth": 0.005052801173982763
+        },
+        "stay": {
+          "mean": 24.23236,
+          "ci95_halfwidth": 0.4958117523347277
+        },
+        "stay_sd": {
+          "mean": 21.28666666666667,
+          "ci95_halfwidth": 0.4723109412088793
+        },
+        "stay_cv": {
+          "mean": 0.8784445503091922,
+          "ci95_halfwidth": 0.011753903911221988
+        },
+        "observed_lost": 58457,
+        "max_waiting": 2
+      }
+    },
+    "buffer_090_004": {
+      "parameters": {
+        "name": "buffer_090_004",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          4,
+          4
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.086943,
+          "ci95_halfwidth": 0.010430797737694328
+        },
+        "throughput": {
+          "mean": 0.07883779834713985,
+          "ci95_halfwidth": 0.0007727134993713156
+        },
+        "loss_probability": {
+          "mean": 0.09363611111111111,
+          "ci95_halfwidth": 0.0028137813779957823
+        },
+        "queue_length": {
+          "mean": 1.5234636666666665,
+          "ci95_halfwidth": 0.04506595236837022
+        },
+        "wait": {
+          "mean": 19.32429,
+          "ci95_halfwidth": 0.5554679466306751
+        },
+        "wait_sd": {
+          "mean": 25.128396666666667,
+          "ci95_halfwidth": 0.6065185421933632
+        },
+        "wait_cv": {
+          "mean": 1.3003715520607895,
+          "ci95_halfwidth": 0.006147144247256704
+        },
+        "positive_wait_cv": {
+          "mean": 0.8320023898192445,
+          "ci95_halfwidth": 0.0017199853445017184
+        },
+        "wait_zero": {
+          "mean": 0.3711426652062388,
+          "ci95_halfwidth": 0.004708268510160085
+        },
+        "stay": {
+          "mean": 33.11157333333333,
+          "ci95_halfwidth": 0.7136563817973023
+        },
+        "stay_sd": {
+          "mean": 28.631803333333334,
+          "ci95_halfwidth": 0.6907675120480352
+        },
+        "stay_cv": {
+          "mean": 0.864702305456152,
+          "ci95_halfwidth": 0.003937240745493743
+        },
+        "observed_lost": 33709,
+        "max_waiting": 4
+      }
+    },
+    "buffer_090_008": {
+      "parameters": {
+        "name": "buffer_090_008",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          8,
+          8
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.1445403333333333,
+          "ci95_halfwidth": 0.006991923648543973
+        },
+        "throughput": {
+          "mean": 0.08307636660605852,
+          "ci95_halfwidth": 0.0009415794109372851
+        },
+        "loss_probability": {
+          "mean": 0.04491666666666667,
+          "ci95_halfwidth": 0.004833609341733706
+        },
+        "queue_length": {
+          "mean": 2.9075113333333333,
+          "ci95_halfwidth": 0.09644472679237236
+        },
+        "wait": {
+          "mean": 34.996406666666665,
+          "ci95_halfwidth": 0.8285505067026786
+        },
+        "wait_sd": {
+          "mean": 41.38762,
+          "ci95_halfwidth": 0.7800279708913169
+        },
+        "wait_cv": {
+          "mean": 1.1826676348792715,
+          "ci95_halfwidth": 0.025454866378588584
+        },
+        "positive_wait_cv": {
+          "mean": 0.8144099125396769,
+          "ci95_halfwidth": 0.022690537978966398
+        },
+        "wait_zero": {
+          "mean": 0.3065891872575352,
+          "ci95_halfwidth": 0.0044034571832170435
+        },
+        "stay": {
+          "mean": 48.77361333333334,
+          "ci95_halfwidth": 0.731708610626892
+        },
+        "stay_sd": {
+          "mean": 43.61439,
+          "ci95_halfwidth": 0.877849958740641
+        },
+        "stay_cv": {
+          "mean": 0.894221411671485,
+          "ci95_halfwidth": 0.012266739266199684
+        },
+        "observed_lost": 16170,
+        "max_waiting": 8
+      }
+    },
+    "buffer_090_016": {
+      "parameters": {
+        "name": "buffer_090_016",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          16,
+          16
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.1814486666666666,
+          "ci95_halfwidth": 0.010702021030276818
+        },
+        "throughput": {
+          "mean": 0.08575590310020877,
+          "ci95_halfwidth": 0.0008983451319779234
+        },
+        "loss_probability": {
+          "mean": 0.014038888888888889,
+          "ci95_halfwidth": 0.0013680057297497292
+        },
+        "queue_length": {
+          "mean": 4.986653,
+          "ci95_halfwidth": 0.28557515648361376
+        },
+        "wait": {
+          "mean": 58.13169,
+          "ci95_halfwidth": 2.937623118614043
+        },
+        "wait_sd": {
+          "mean": 68.22921333333333,
+          "ci95_halfwidth": 1.7733024133217032
+        },
+        "wait_cv": {
+          "mean": 1.173887315608653,
+          "ci95_halfwidth": 0.037972379472769185
+        },
+        "positive_wait_cv": {
+          "mean": 0.857657904773629,
+          "ci95_halfwidth": 0.02946275397987646
+        },
+        "wait_zero": {
+          "mean": 0.2701386008890695,
+          "ci95_halfwidth": 0.00723481052829963
+        },
+        "stay": {
+          "mean": 71.90868999999999,
+          "ci95_halfwidth": 2.953926250767968
+        },
+        "stay_sd": {
+          "mean": 69.61095666666667,
+          "ci95_halfwidth": 1.762013756670021
+        },
+        "stay_cv": {
+          "mean": 0.9681291559695422,
+          "ci95_halfwidth": 0.022171260477056785
+        },
+        "observed_lost": 5054,
+        "max_waiting": 16
+      }
+    },
+    "buffer_090_032": {
+      "parameters": {
+        "name": "buffer_090_032",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          32,
+          32
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.1959956666666667,
+          "ci95_halfwidth": 0.01075695733020117
+        },
+        "throughput": {
+          "mean": 0.08680784417875093,
+          "ci95_halfwidth": 0.0010146148806231996
+        },
+        "loss_probability": {
+          "mean": 0.0020305555555555554,
+          "ci95_halfwidth": 0.0011014080992404814
+        },
+        "queue_length": {
+          "mean": 6.962702,
+          "ci95_halfwidth": 1.2288860317550876
+        },
+        "wait": {
+          "mean": 80.19660666666667,
+          "ci95_halfwidth": 13.565738733936282
+        },
+        "wait_sd": {
+          "mean": 100.12044666666667,
+          "ci95_halfwidth": 13.474799871967763
+        },
+        "wait_cv": {
+          "mean": 1.2492623941946959,
+          "ci95_halfwidth": 0.04544057815308658
+        },
+        "positive_wait_cv": {
+          "mean": 0.9513553900246743,
+          "ci95_halfwidth": 0.03176363326974359
+        },
+        "wait_zero": {
+          "mean": 0.25599688805963294,
+          "ci95_halfwidth": 0.009706634386686163
+        },
+        "stay": {
+          "mean": 93.97426,
+          "ci95_halfwidth": 13.564939518001307
+        },
+        "stay_sd": {
+          "mean": 101.01277666666667,
+          "ci95_halfwidth": 13.31959708798039
+        },
+        "stay_cv": {
+          "mean": 1.0751155310195204,
+          "ci95_halfwidth": 0.014030861659659529
+        },
+        "observed_lost": 731,
+        "max_waiting": 32
+      }
+    },
+    "buffer_090_064": {
+      "parameters": {
+        "name": "buffer_090_064",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          64,
+          64
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.1981943333333334,
+          "ci95_halfwidth": 0.012156004025117857
+        },
+        "throughput": {
+          "mean": 0.08696911643629934,
+          "ci95_halfwidth": 0.0010397575068963624
+        },
+        "loss_probability": {
+          "mean": 0.00015000000000000001,
+          "ci95_halfwidth": 0.0005741067361280416
+        },
+        "queue_length": {
+          "mean": 7.831029333333333,
+          "ci95_halfwidth": 1.3546989016683637
+        },
+        "wait": {
+          "mean": 90.02725,
+          "ci95_halfwidth": 15.053175418526
+        },
+        "wait_sd": {
+          "mean": 120.98473333333334,
+          "ci95_halfwidth": 12.14357180374419
+        },
+        "wait_cv": {
+          "mean": 1.3460748689915556,
+          "ci95_halfwidth": 0.14795675471256847
+        },
+        "positive_wait_cv": {
+          "mean": 1.048899394702027,
+          "ci95_halfwidth": 0.1283587284286197
+        },
+        "wait_zero": {
+          "mean": 0.2529525053107953,
+          "ci95_halfwidth": 0.01102501121121166
+        },
+        "stay": {
+          "mean": 103.80464333333333,
+          "ci95_halfwidth": 15.100816766616829
+        },
+        "stay_sd": {
+          "mean": 121.76383333333334,
+          "ci95_halfwidth": 12.001782274220746
+        },
+        "stay_cv": {
+          "mean": 1.1742764379388309,
+          "ci95_halfwidth": 0.1063637285105562
+        },
+        "observed_lost": 54,
+        "max_waiting": 64
+      }
+    },
+    "buffer_090_128": {
+      "parameters": {
+        "name": "buffer_090_128",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          128,
+          128
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.19837,
+          "ci95_halfwidth": 0.011400828342431325
+        },
+        "throughput": {
+          "mean": 0.08698197230933997,
+          "ci95_halfwidth": 0.0010027647179000835
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 7.957382333333333,
+          "ci95_halfwidth": 1.0290208759376707
+        },
+        "wait": {
+          "mean": 91.46943,
+          "ci95_halfwidth": 11.495829193961262
+        },
+        "wait_sd": {
+          "mean": 125.86796666666666,
+          "ci95_halfwidth": 15.136302743432676
+        },
+        "wait_cv": {
+          "mean": 1.3786716044294454,
+          "ci95_halfwidth": 0.2568689729298301
+        },
+        "positive_wait_cv": {
+          "mean": 1.079818651295363,
+          "ci95_halfwidth": 0.23186874826816314
+        },
+        "wait_zero": {
+          "mean": 0.25287777777777776,
+          "ci95_halfwidth": 0.010191977384150537
+        },
+        "stay": {
+          "mean": 105.24676666666667,
+          "ci95_halfwidth": 11.57150520561067
+        },
+        "stay_sd": {
+          "mean": 126.606,
+          "ci95_halfwidth": 14.965333247215229
+        },
+        "stay_cv": {
+          "mean": 1.204680582990039,
+          "ci95_halfwidth": 0.2065140398360153
+        },
+        "observed_lost": 0,
+        "max_waiting": 99
+      }
+    },
+    "buffer_090_256": {
+      "parameters": {
+        "name": "buffer_090_256",
+        "family": "buffer",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 13.82,
+        "channels": [
+          1,
+          1
+        ],
+        "waiting_places": [
+          256,
+          256
+        ],
+        "offered_load": 0.9,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.19837,
+          "ci95_halfwidth": 0.011400828342431325
+        },
+        "throughput": {
+          "mean": 0.08698197230933997,
+          "ci95_halfwidth": 0.0010027647179000835
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 7.957382333333333,
+          "ci95_halfwidth": 1.0290208759376707
+        },
+        "wait": {
+          "mean": 91.46943,
+          "ci95_halfwidth": 11.495829193961262
+        },
+        "wait_sd": {
+          "mean": 125.86796666666666,
+          "ci95_halfwidth": 15.136302743432676
+        },
+        "wait_cv": {
+          "mean": 1.3786716044294454,
+          "ci95_halfwidth": 0.2568689729298301
+        },
+        "positive_wait_cv": {
+          "mean": 1.079818651295363,
+          "ci95_halfwidth": 0.23186874826816314
+        },
+        "wait_zero": {
+          "mean": 0.25287777777777776,
+          "ci95_halfwidth": 0.010191977384150537
+        },
+        "stay": {
+          "mean": 105.24676666666667,
+          "ci95_halfwidth": 11.57150520561067
+        },
+        "stay_sd": {
+          "mean": 126.606,
+          "ci95_halfwidth": 14.965333247215229
+        },
+        "stay_cv": {
+          "mean": 1.204680582990039,
+          "ci95_halfwidth": 0.2065140398360153
+        },
+        "observed_lost": 0,
+        "max_waiting": 99
+      }
+    },
+    "servers_work_050_1": {
+      "parameters": {
+        "name": "servers_work_050_1",
+        "family": "servers_work",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          2
+        ],
+        "offered_load": 0.6666666666666666,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.5839413333333333,
+          "ci95_halfwidth": 0.007200854653953878
+        },
+        "throughput": {
+          "mean": 0.07639128144613114,
+          "ci95_halfwidth": 0.0009123905739417576
+        },
+        "loss_probability": {
+          "mean": 0.12176111111111111,
+          "ci95_halfwidth": 0.0020023311028459743
+        },
+        "queue_length": {
+          "mean": 0.4289055333333333,
+          "ci95_halfwidth": 0.008316578654315414
+        },
+        "wait": {
+          "mean": 5.6142373333333335,
+          "ci95_halfwidth": 0.05891056113671482
+        },
+        "wait_sd": {
+          "mean": 8.863375999999999,
+          "ci95_halfwidth": 0.12356947486308331
+        },
+        "wait_cv": {
+          "mean": 1.5787330455812667,
+          "ci95_halfwidth": 0.015482052883184163
+        },
+        "positive_wait_cv": {
+          "mean": 0.9131450072708763,
+          "ci95_halfwidth": 0.008047581283696514
+        },
+        "wait_zero": {
+          "mean": 0.47490276274248894,
+          "ci95_halfwidth": 0.0048138036175036
+        },
+        "stay": {
+          "mean": 13.25817,
+          "ci95_halfwidth": 0.0955151278749502
+        },
+        "stay_sd": {
+          "mean": 11.694306666666666,
+          "ci95_halfwidth": 0.18184385398262953
+        },
+        "stay_cv": {
+          "mean": 0.8820407390170181,
+          "ci95_halfwidth": 0.008529825157452998
+        },
+        "observed_lost": 43834,
+        "max_waiting": 2
+      }
+    },
+    "servers_load_050_1": {
+      "parameters": {
+        "name": "servers_load_050_1",
+        "family": "servers_load",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 5.758333333333334,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          2
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.4656801,
+          "ci95_halfwidth": 0.005168530730522693
+        },
+        "throughput": {
+          "mean": 0.08118513689880472,
+          "ci95_halfwidth": 0.0008651606645006778
+        },
+        "loss_probability": {
+          "mean": 0.06664722222222222,
+          "ci95_halfwidth": 0.0013071224634664087
+        },
+        "queue_length": {
+          "mean": 0.26740613333333335,
+          "ci95_halfwidth": 0.007495407982826054
+        },
+        "wait": {
+          "mean": 3.293757333333333,
+          "ci95_halfwidth": 0.061570848097308485
+        },
+        "wait_sd": {
+          "mean": 6.049915333333333,
+          "ci95_halfwidth": 0.0885741796946045
+        },
+        "wait_cv": {
+          "mean": 1.8368012214782685,
+          "ci95_halfwidth": 0.013571484351677102
+        },
+        "positive_wait_cv": {
+          "mean": 0.934404279161227,
+          "ci95_halfwidth": 0.003690214591263065
+        },
+        "wait_zero": {
+          "mean": 0.5717437989972042,
+          "ci95_halfwidth": 0.0036829391027397235
+        },
+        "stay": {
+          "mean": 9.029786333333334,
+          "ci95_halfwidth": 0.07677489876644122
+        },
+        "stay_sd": {
+          "mean": 8.339193999999999,
+          "ci95_halfwidth": 0.08588427382633113
+        },
+        "stay_cv": {
+          "mean": 0.9235191937519903,
+          "ci95_halfwidth": 0.0020520727823821563
+        },
+        "observed_lost": 23993,
+        "max_waiting": 2
+      }
+    },
+    "servers_work_050_3": {
+      "parameters": {
+        "name": "servers_work_050_3",
+        "family": "servers_work",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 7.677777777777778,
+        "channels": [
+          2,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.25,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6595730666666667,
+          "ci95_halfwidth": 0.0057846322815978055
+        },
+        "throughput": {
+          "mean": 0.08618496056601911,
+          "ci95_halfwidth": 0.0010455753359374694
+        },
+        "loss_probability": {
+          "mean": 0.009166666666666667,
+          "ci95_halfwidth": 0.000917254017220138
+        },
+        "queue_length": {
+          "mean": 0.050815896666666666,
+          "ci95_halfwidth": 0.00236729450598782
+        },
+        "wait": {
+          "mean": 0.5896421666666667,
+          "ci95_halfwidth": 0.03165684688846278
+        },
+        "wait_sd": {
+          "mean": 2.5611353333333335,
+          "ci95_halfwidth": 0.14194731857016124
+        },
+        "wait_cv": {
+          "mean": 4.343526286012573,
+          "ci95_halfwidth": 0.051328887089911325
+        },
+        "positive_wait_cv": {
+          "mean": 1.0432689377234337,
+          "ci95_halfwidth": 0.01820825337747458
+        },
+        "wait_zero": {
+          "mean": 0.8948723922467792,
+          "ci95_halfwidth": 0.0022769841114656636
+        },
+        "stay": {
+          "mean": 8.242756,
+          "ci95_halfwidth": 0.1291255832246401
+        },
+        "stay_sd": {
+          "mean": 8.076673666666666,
+          "ci95_halfwidth": 0.11363061780584603
+        },
+        "stay_cv": {
+          "mean": 0.9798543503170954,
+          "ci95_halfwidth": 0.0036415260873440976
+        },
+        "observed_lost": 3300,
+        "max_waiting": 2
+      }
+    },
+    "servers_load_050_3": {
+      "parameters": {
+        "name": "servers_load_050_3",
+        "family": "servers_load",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 15.355555555555556,
+        "channels": [
+          2,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.2633883333333333,
+          "ci95_halfwidth": 0.013126412838056097
+        },
+        "throughput": {
+          "mean": 0.0825235513357244,
+          "ci95_halfwidth": 0.0012162694078694757
+        },
+        "loss_probability": {
+          "mean": 0.05126666666666667,
+          "ci95_halfwidth": 0.003336623857725025
+        },
+        "queue_length": {
+          "mean": 0.25048243333333337,
+          "ci95_halfwidth": 0.008296227797391616
+        },
+        "wait": {
+          "mean": 3.0353103333333333,
+          "ci95_halfwidth": 0.12359904807946386
+        },
+        "wait_sd": {
+          "mean": 7.717756666666666,
+          "ci95_halfwidth": 0.28246996940482705
+        },
+        "wait_cv": {
+          "mean": 2.5427665288803354,
+          "ci95_halfwidth": 0.0556887486470054
+        },
+        "positive_wait_cv": {
+          "mean": 0.9939348168841141,
+          "ci95_halfwidth": 0.024473728419507356
+        },
+        "wait_zero": {
+          "mean": 0.7337152061806178,
+          "ci95_halfwidth": 0.003648781108849185
+        },
+        "stay": {
+          "mean": 18.34494,
+          "ci95_halfwidth": 0.35742696499796967
+        },
+        "stay_sd": {
+          "mean": 17.14965,
+          "ci95_halfwidth": 0.2954879384406074
+        },
+        "stay_cv": {
+          "mean": 0.9348510243456754,
+          "ci95_halfwidth": 0.007513718711448603
+        },
+        "observed_lost": 18456,
+        "max_waiting": 2
+      }
+    },
+    "servers_work_075_1": {
+      "parameters": {
+        "name": "servers_work_075_1",
+        "family": "servers_work",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 11.516666666666667,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          2
+        ],
+        "offered_load": 1.0,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7496450666666666,
+          "ci95_halfwidth": 0.006881350354484121
+        },
+        "throughput": {
+          "mean": 0.06541157255131375,
+          "ci95_halfwidth": 0.0005980291175179444
+        },
+        "loss_probability": {
+          "mean": 0.2479888888888889,
+          "ci95_halfwidth": 0.002839256503194731
+        },
+        "queue_length": {
+          "mean": 0.7476554,
+          "ci95_halfwidth": 0.015335623412292106
+        },
+        "wait": {
+          "mean": 11.430223333333334,
+          "ci95_halfwidth": 0.1886503321969287
+        },
+        "wait_sd": {
+          "mean": 14.819173333333334,
+          "ci95_halfwidth": 0.13753480386648523
+        },
+        "wait_cv": {
+          "mean": 1.2965071492709144,
+          "ci95_halfwidth": 0.00957547207645656
+        },
+        "positive_wait_cv": {
+          "mean": 0.8849888656242823,
+          "ci95_halfwidth": 0.0019443648256904703
+        },
+        "wait_zero": {
+          "mean": 0.33485107652768603,
+          "ci95_halfwidth": 0.007173228302164715
+        },
+        "stay": {
+          "mean": 22.890686666666667,
+          "ci95_halfwidth": 0.26239589368883354
+        },
+        "stay_sd": {
+          "mean": 18.72681,
+          "ci95_halfwidth": 0.2286088019298761
+        },
+        "stay_cv": {
+          "mean": 0.8180969320760384,
+          "ci95_halfwidth": 0.002326128375624155
+        },
+        "observed_lost": 89276,
+        "max_waiting": 2
+      }
+    },
+    "servers_load_075_1": {
+      "parameters": {
+        "name": "servers_load_075_1",
+        "family": "servers_load",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 8.637500000000001,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          2
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.6334480333333333,
+          "ci95_halfwidth": 0.005475333444110003
+        },
+        "throughput": {
+          "mean": 0.07373147554486095,
+          "ci95_halfwidth": 0.0006743550655422109
+        },
+        "loss_probability": {
+          "mean": 0.15233333333333332,
+          "ci95_halfwidth": 0.002033834595881071
+        },
+        "queue_length": {
+          "mean": 0.5111263333333333,
+          "ci95_halfwidth": 0.009029681916623643
+        },
+        "wait": {
+          "mean": 6.932245,
+          "ci95_halfwidth": 0.06076268849519035
+        },
+        "wait_sd": {
+          "mean": 10.337276666666666,
+          "ci95_halfwidth": 0.009425971165420747
+        },
+        "wait_cv": {
+          "mean": 1.4912006840260599,
+          "ci95_halfwidth": 0.014023549614820552
+        },
+        "positive_wait_cv": {
+          "mean": 0.9073868689836152,
+          "ci95_halfwidth": 0.008476731385538993
+        },
+        "wait_zero": {
+          "mean": 0.43438397540958407,
+          "ci95_halfwidth": 0.005259552771446507
+        },
+        "stay": {
+          "mean": 15.523546666666666,
+          "ci95_halfwidth": 0.07138577284749822
+        },
+        "stay_sd": {
+          "mean": 13.42435,
+          "ci95_halfwidth": 0.05211837818774392
+        },
+        "stay_cv": {
+          "mean": 0.8647746688224234,
+          "ci95_halfwidth": 0.003998808597848139
+        },
+        "observed_lost": 54840,
+        "max_waiting": 2
+      }
+    },
+    "servers_work_075_3": {
+      "parameters": {
+        "name": "servers_work_075_3",
+        "family": "servers_work",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 11.516666666666667,
+        "channels": [
+          2,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.375,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.9737838,
+          "ci95_halfwidth": 0.008987692697790237
+        },
+        "throughput": {
+          "mean": 0.0848117914340194,
+          "ci95_halfwidth": 0.0011458106016526842
+        },
+        "loss_probability": {
+          "mean": 0.024955555555555554,
+          "ci95_halfwidth": 0.002237469330724703
+        },
+        "queue_length": {
+          "mean": 0.13139083333333332,
+          "ci95_halfwidth": 0.004102407522355213
+        },
+        "wait": {
+          "mean": 1.5492836666666667,
+          "ci95_halfwidth": 0.06799370829266936
+        },
+        "wait_sd": {
+          "mean": 4.915741,
+          "ci95_halfwidth": 0.19481651480114687
+        },
+        "wait_cv": {
+          "mean": 3.172983579575316,
+          "ci95_halfwidth": 0.02377133126434952
+        },
+        "positive_wait_cv": {
+          "mean": 1.0214702131512512,
+          "ci95_halfwidth": 0.0066194467516595195
+        },
+        "wait_zero": {
+          "mean": 0.8153726535059967,
+          "ci95_halfwidth": 0.001971102216513358
+        },
+        "stay": {
+          "mean": 13.03115,
+          "ci95_halfwidth": 0.21158783573237738
+        },
+        "stay_sd": {
+          "mean": 12.5006,
+          "ci95_halfwidth": 0.207089102796202
+        },
+        "stay_cv": {
+          "mean": 0.9592885233100826,
+          "ci95_halfwidth": 0.007382761289164311
+        },
+        "observed_lost": 8984,
+        "max_waiting": 2
+      }
+    },
+    "servers_load_075_3": {
+      "parameters": {
+        "name": "servers_load_075_3",
+        "family": "servers_load",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 23.033333333333335,
+        "channels": [
+          2,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.7432706666666666,
+          "ci95_halfwidth": 0.014574500971124017
+        },
+        "throughput": {
+          "mean": 0.07586188379887972,
+          "ci95_halfwidth": 0.0010983300850963024
+        },
+        "loss_probability": {
+          "mean": 0.12784444444444445,
+          "ci95_halfwidth": 0.003933989479488991
+        },
+        "queue_length": {
+          "mean": 0.5556573666666667,
+          "ci95_halfwidth": 0.013113556164374077
+        },
+        "wait": {
+          "mean": 7.324992,
+          "ci95_halfwidth": 0.20715018631235796
+        },
+        "wait_sd": {
+          "mean": 13.974493333333333,
+          "ci95_halfwidth": 0.39441598161457564
+        },
+        "wait_cv": {
+          "mean": 1.9077944107664824,
+          "ci95_halfwidth": 0.020326374594239832
+        },
+        "positive_wait_cv": {
+          "mean": 0.9566223537666796,
+          "ci95_halfwidth": 0.014668251603919555
+        },
+        "wait_zero": {
+          "mean": 0.5872260636531726,
+          "ci95_halfwidth": 0.0012560530141071224
+        },
+        "stay": {
+          "mean": 30.304796666666665,
+          "ci95_halfwidth": 0.5402552079261606
+        },
+        "stay_sd": {
+          "mean": 26.89256,
+          "ci95_halfwidth": 0.4817630524007438
+        },
+        "stay_cv": {
+          "mean": 0.8874036970871015,
+          "ci95_halfwidth": 0.00430342376915906
+        },
+        "observed_lost": 46024,
+        "max_waiting": 2
+      }
+    },
+    "servers_work_095_1": {
+      "parameters": {
+        "name": "servers_work_095_1",
+        "family": "servers_work",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 14.587777777777779,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          2
+        ],
+        "offered_load": 1.2666666666666666,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8296772333333333,
+          "ci95_halfwidth": 0.006476774219766818
+        },
+        "throughput": {
+          "mean": 0.05711034065901406,
+          "ci95_halfwidth": 0.000627877094775817
+        },
+        "loss_probability": {
+          "mean": 0.34341944444444444,
+          "ci95_halfwidth": 0.004958760799188905
+        },
+        "queue_length": {
+          "mean": 0.957742,
+          "ci95_halfwidth": 0.01867837212447811
+        },
+        "wait": {
+          "mean": 16.769736666666667,
+          "ci95_halfwidth": 0.3947385081304482
+        },
+        "wait_sd": {
+          "mean": 19.503433333333334,
+          "ci95_halfwidth": 0.38706869025863455
+        },
+        "wait_cv": {
+          "mean": 1.1630326291117021,
+          "ci95_halfwidth": 0.01386672599117519
+        },
+        "positive_wait_cv": {
+          "mean": 0.8613084983369955,
+          "ci95_halfwidth": 0.0055401209960459046
+        },
+        "wait_zero": {
+          "mean": 0.25961261715980805,
+          "ci95_halfwidth": 0.008849790248259784
+        },
+        "stay": {
+          "mean": 31.2974,
+          "ci95_halfwidth": 0.5581956293630943
+        },
+        "stay_sd": {
+          "mean": 24.28249,
+          "ci95_halfwidth": 0.5387202442804873
+        },
+        "stay_cv": {
+          "mean": 0.7758599485339374,
+          "ci95_halfwidth": 0.007926691545473907
+        },
+        "observed_lost": 123631,
+        "max_waiting": 2
+      }
+    },
+    "servers_load_095_1": {
+      "parameters": {
+        "name": "servers_load_095_1",
+        "family": "servers_load",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 10.940833333333334,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          2
+        ],
+        "offered_load": 0.95,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7302433333333334,
+          "ci95_halfwidth": 0.0031684848858022814
+        },
+        "throughput": {
+          "mean": 0.0670487592900094,
+          "ci95_halfwidth": 0.0004710372340370951
+        },
+        "loss_probability": {
+          "mean": 0.2291527777777778,
+          "ci95_halfwidth": 0.0071065370701753495
+        },
+        "queue_length": {
+          "mean": 0.7027793666666666,
+          "ci95_halfwidth": 0.013997965714544331
+        },
+        "wait": {
+          "mean": 10.481123333333333,
+          "ci95_halfwidth": 0.24409836631222823
+        },
+        "wait_sd": {
+          "mean": 13.895883333333334,
+          "ci95_halfwidth": 0.2681772388930413
+        },
+        "wait_cv": {
+          "mean": 1.3258146391711265,
+          "ci95_halfwidth": 0.006156611523945792
+        },
+        "positive_wait_cv": {
+          "mean": 0.8883116719197209,
+          "ci95_halfwidth": 0.0016930875130685707
+        },
+        "wait_zero": {
+          "mean": 0.3512534146267674,
+          "ci95_halfwidth": 0.004602022697672677
+        },
+        "stay": {
+          "mean": 21.372333333333334,
+          "ci95_halfwidth": 0.3146923910936269
+        },
+        "stay_sd": {
+          "mean": 17.65093,
+          "ci95_halfwidth": 0.2971100114076125
+        },
+        "stay_cv": {
+          "mean": 0.8258749548937181,
+          "ci95_halfwidth": 0.0023853581245280604
+        },
+        "observed_lost": 82495,
+        "max_waiting": 2
+      }
+    },
+    "servers_work_095_3": {
+      "parameters": {
+        "name": "servers_work_095_3",
+        "family": "servers_work",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 14.587777777777779,
+        "channels": [
+          2,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.475,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.2079963333333334,
+          "ci95_halfwidth": 0.010834363940137362
+        },
+        "throughput": {
+          "mean": 0.0830672155825515,
+          "ci95_halfwidth": 0.000994615417075664
+        },
+        "loss_probability": {
+          "mean": 0.045,
+          "ci95_halfwidth": 0.0011807868401907235
+        },
+        "queue_length": {
+          "mean": 0.22319586666666666,
+          "ci95_halfwidth": 0.0034491001473057415
+        },
+        "wait": {
+          "mean": 2.6869283333333334,
+          "ci95_halfwidth": 0.06698353662112974
+        },
+        "wait_sd": {
+          "mean": 7.143319333333333,
+          "ci95_halfwidth": 0.24546019114559603
+        },
+        "wait_cv": {
+          "mean": 2.658506569305835,
+          "ci95_halfwidth": 0.045750560754471405
+        },
+        "positive_wait_cv": {
+          "mean": 1.0080839800864063,
+          "ci95_halfwidth": 0.03715181451126185
+        },
+        "wait_zero": {
+          "mean": 0.7500783963624529,
+          "ci95_halfwidth": 0.0020949139204769233
+        },
+        "stay": {
+          "mean": 17.229406666666666,
+          "ci95_halfwidth": 0.28099046251944865
+        },
+        "stay_sd": {
+          "mean": 16.209496666666666,
+          "ci95_halfwidth": 0.3152467903012804
+        },
+        "stay_cv": {
+          "mean": 0.9408024299960578,
+          "ci95_halfwidth": 0.008411742228996703
+        },
+        "observed_lost": 16200,
+        "max_waiting": 2
+      }
+    },
+    "servers_load_095_3": {
+      "parameters": {
+        "name": "servers_load_095_3",
+        "family": "servers_load",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 29.175555555555558,
+        "channels": [
+          2,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.95,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 2.028315,
+          "ci95_halfwidth": 0.01586192865517302
+        },
+        "throughput": {
+          "mean": 0.06963517723308751,
+          "ci95_halfwidth": 0.0008813232280964369
+        },
+        "loss_probability": {
+          "mean": 0.19943333333333332,
+          "ci95_halfwidth": 0.003922569509602379
+        },
+        "queue_length": {
+          "mean": 0.8139589333333334,
+          "ci95_halfwidth": 0.013526396245107082
+        },
+        "wait": {
+          "mean": 11.689293333333334,
+          "ci95_halfwidth": 0.24217158142954498
+        },
+        "wait_sd": {
+          "mean": 19.1885,
+          "ci95_halfwidth": 0.47879949569798985
+        },
+        "wait_cv": {
+          "mean": 1.641559179212733,
+          "ci95_halfwidth": 0.031088075660080774
+        },
+        "positive_wait_cv": {
+          "mean": 0.9366171738307285,
+          "ci95_halfwidth": 0.021756655744583513
+        },
+        "wait_zero": {
+          "mean": 0.4918994409141519,
+          "ci95_halfwidth": 0.004549058996086853
+        },
+        "stay": {
+          "mean": 40.81725333333333,
+          "ci95_halfwidth": 0.6515364646808869
+        },
+        "stay_sd": {
+          "mean": 34.85697666666667,
+          "ci95_halfwidth": 0.6914453707210542
+        },
+        "stay_cv": {
+          "mean": 0.8539735959945606,
+          "ci95_halfwidth": 0.0074489049382941595
+        },
+        "observed_lost": 71796,
+        "max_waiting": 2
+      }
+    },
+    "servers_work_099_1": {
+      "parameters": {
+        "name": "servers_work_099_1",
+        "family": "servers_work",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 15.202,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          2
+        ],
+        "offered_load": 1.3199999999999998,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.8426572333333333,
+          "ci95_halfwidth": 0.005326760162854687
+        },
+        "throughput": {
+          "mean": 0.05564554126290122,
+          "ci95_halfwidth": 0.0004892026795403233
+        },
+        "loss_probability": {
+          "mean": 0.3602611111111111,
+          "ci95_halfwidth": 0.006312843486724337
+        },
+        "queue_length": {
+          "mean": 0.9934997666666666,
+          "ci95_halfwidth": 0.014194109450858033
+        },
+        "wait": {
+          "mean": 17.854413333333333,
+          "ci95_halfwidth": 0.36219893794263036
+        },
+        "wait_sd": {
+          "mean": 20.45035,
+          "ci95_halfwidth": 0.27130759419806955
+        },
+        "wait_cv": {
+          "mean": 1.145419035109258,
+          "ci95_halfwidth": 0.014457506093002167
+        },
+        "positive_wait_cv": {
+          "mean": 0.8606150965159851,
+          "ci95_halfwidth": 0.012196921207271389
+        },
+        "wait_zero": {
+          "mean": 0.2471123771943737,
+          "ci95_halfwidth": 0.0031894668934045497
+        },
+        "stay": {
+          "mean": 32.99783333333333,
+          "ci95_halfwidth": 0.5366197169454778
+        },
+        "stay_sd": {
+          "mean": 25.426693333333333,
+          "ci95_halfwidth": 0.46710485393440065
+        },
+        "stay_cv": {
+          "mean": 0.7705591919417666,
+          "ci95_halfwidth": 0.009091002836281125
+        },
+        "observed_lost": 129694,
+        "max_waiting": 2
+      }
+    },
+    "servers_load_099_1": {
+      "parameters": {
+        "name": "servers_load_099_1",
+        "family": "servers_load",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 11.4015,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          2
+        ],
+        "offered_load": 0.99,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7454561666666667,
+          "ci95_halfwidth": 0.005751266863749683
+        },
+        "throughput": {
+          "mean": 0.06569942617204705,
+          "ci95_halfwidth": 0.0005887713156823874
+        },
+        "loss_probability": {
+          "mean": 0.24467777777777777,
+          "ci95_halfwidth": 0.004320958097912973
+        },
+        "queue_length": {
+          "mean": 0.7383664,
+          "ci95_halfwidth": 0.013620297396231525
+        },
+        "wait": {
+          "mean": 11.238396666666667,
+          "ci95_halfwidth": 0.1929864435853051
+        },
+        "wait_sd": {
+          "mean": 14.613683333333334,
+          "ci95_halfwidth": 0.2968659984482408
+        },
+        "wait_cv": {
+          "mean": 1.3003282138782506,
+          "ci95_halfwidth": 0.005382926660826942
+        },
+        "positive_wait_cv": {
+          "mean": 0.8842436979191368,
+          "ci95_halfwidth": 0.008118530182008206
+        },
+        "wait_zero": {
+          "mean": 0.33779744221733565,
+          "ci95_halfwidth": 0.002805951584413907
+        },
+        "stay": {
+          "mean": 22.584806666666665,
+          "ci95_halfwidth": 0.2651309786932201
+        },
+        "stay_sd": {
+          "mean": 18.496916666666667,
+          "ci95_halfwidth": 0.4087368083404557
+        },
+        "stay_cv": {
+          "mean": 0.8189876153744415,
+          "ci95_halfwidth": 0.008583889546518196
+        },
+        "observed_lost": 88084,
+        "max_waiting": 2
+      }
+    },
+    "servers_work_099_3": {
+      "parameters": {
+        "name": "servers_work_099_3",
+        "family": "servers_work",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 15.202,
+        "channels": [
+          2,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.495,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 1.252356,
+          "ci95_halfwidth": 0.014322359735451966
+        },
+        "throughput": {
+          "mean": 0.08263538180999848,
+          "ci95_halfwidth": 0.0011708972502268544
+        },
+        "loss_probability": {
+          "mean": 0.04998888888888889,
+          "ci95_halfwidth": 0.0028092079385063336
+        },
+        "queue_length": {
+          "mean": 0.24509543333333333,
+          "ci95_halfwidth": 0.0041746873830989135
+        },
+        "wait": {
+          "mean": 2.966036,
+          "ci95_halfwidth": 0.08247997093502925
+        },
+        "wait_sd": {
+          "mean": 7.5958103333333336,
+          "ci95_halfwidth": 0.3000335663790966
+        },
+        "wait_cv": {
+          "mean": 2.5608763504182646,
+          "ci95_halfwidth": 0.051265423435642055
+        },
+        "positive_wait_cv": {
+          "mean": 0.9935361941876888,
+          "ci95_halfwidth": 0.03364968537908038
+        },
+        "wait_zero": {
+          "mean": 0.7370789272225662,
+          "ci95_halfwidth": 0.0026651611933775133
+        },
+        "stay": {
+          "mean": 18.121586666666666,
+          "ci95_halfwidth": 0.30750978814431557
+        },
+        "stay_sd": {
+          "mean": 16.94631,
+          "ci95_halfwidth": 0.31711142060853525
+        },
+        "stay_cv": {
+          "mean": 0.9351448060305316,
+          "ci95_halfwidth": 0.007253897581739468
+        },
+        "observed_lost": 17996,
+        "max_waiting": 2
+      }
+    },
+    "servers_load_099_3": {
+      "parameters": {
+        "name": "servers_load_099_3",
+        "family": "servers_load",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 30.404,
+        "channels": [
+          2,
+          1
+        ],
+        "waiting_places": [
+          2,
+          1
+        ],
+        "offered_load": 0.99,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 2.0738893333333333,
+          "ci95_halfwidth": 0.01475029451840607
+        },
+        "throughput": {
+          "mean": 0.06831259878251117,
+          "ci95_halfwidth": 0.0009050643179544049
+        },
+        "loss_probability": {
+          "mean": 0.21463333333333334,
+          "ci95_halfwidth": 0.0052363399209297895
+        },
+        "queue_length": {
+          "mean": 0.8666560666666666,
+          "ci95_halfwidth": 0.024895921781878848
+        },
+        "wait": {
+          "mean": 12.68697,
+          "ci95_halfwidth": 0.4704507532568481
+        },
+        "wait_sd": {
+          "mean": 20.352943333333332,
+          "ci95_halfwidth": 0.4810698924962496
+        },
+        "wait_cv": {
+          "mean": 1.6043437306882529,
+          "ci95_halfwidth": 0.031674468790694216
+        },
+        "positive_wait_cv": {
+          "mean": 0.9348849649740891,
+          "ci95_halfwidth": 0.014205909891238532
+        },
+        "wait_zero": {
+          "mean": 0.47562807115760886,
+          "ci95_halfwidth": 0.008467829778804508
+        },
+        "stay": {
+          "mean": 43.04624333333334,
+          "ci95_halfwidth": 0.9224941267491263
+        },
+        "stay_sd": {
+          "mean": 36.5626,
+          "ci95_halfwidth": 0.6990615676965262
+        },
+        "stay_cv": {
+          "mean": 0.8493863202790376,
+          "ci95_halfwidth": 0.006280696785561645
+        },
+        "observed_lost": 77268,
+        "max_waiting": 2
+      }
+    },
+    "control_exp_050": {
+      "parameters": {
+        "name": "control_exp_050",
+        "family": "control",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 5.758333333333334,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          256
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.49889893333333335,
+          "ci95_halfwidth": 0.005039161737528157
+        },
+        "throughput": {
+          "mean": 0.08698294129690737,
+          "ci95_halfwidth": 0.000978053548051659
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 0.49882770000000004,
+          "ci95_halfwidth": 0.020367961711670268
+        },
+        "wait": {
+          "mean": 5.7350666666666665,
+          "ci95_halfwidth": 0.27876307800904077
+        },
+        "wait_sd": {
+          "mean": 10.060624,
+          "ci95_halfwidth": 0.6729459275417676
+        },
+        "wait_cv": {
+          "mean": 1.7540602154412377,
+          "ci95_halfwidth": 0.03230533476365657
+        },
+        "positive_wait_cv": {
+          "mean": 1.014844733888751,
+          "ci95_halfwidth": 0.03134388072718552
+        },
+        "wait_zero": {
+          "mean": 0.5020666666666667,
+          "ci95_halfwidth": 0.0017553499631352185
+        },
+        "stay": {
+          "mean": 11.470673333333334,
+          "ci95_halfwidth": 0.29134676392746767
+        },
+        "stay_sd": {
+          "mean": 11.594726666666666,
+          "ci95_halfwidth": 0.646006134645247
+        },
+        "stay_cv": {
+          "mean": 1.010730506268407,
+          "ci95_halfwidth": 0.030737574005707334
+        },
+        "observed_lost": 0,
+        "max_waiting": 16
+      }
+    },
+    "control_h2_050": {
+      "parameters": {
+        "name": "control_h2_050",
+        "family": "control",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "h2",
+        "service_time": 5.758333333333334,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          256
+        ],
+        "offered_load": 0.5,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.49961373333333337,
+          "ci95_halfwidth": 0.011419172800394691
+        },
+        "throughput": {
+          "mean": 0.08698229507363976,
+          "ci95_halfwidth": 0.0009802215584739944
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 1.2489193333333333,
+          "ci95_halfwidth": 0.10747834230173695
+        },
+        "wait": {
+          "mean": 14.3579,
+          "ci95_halfwidth": 1.1833750962910967
+        },
+        "wait_sd": {
+          "mean": 29.582956666666668,
+          "ci95_halfwidth": 1.5211095013087401
+        },
+        "wait_cv": {
+          "mean": 2.060987667826662,
+          "ci95_halfwidth": 0.07061158305817829
+        },
+        "positive_wait_cv": {
+          "mean": 1.2717106080697653,
+          "ci95_halfwidth": 0.03650987065631373
+        },
+        "wait_zero": {
+          "mean": 0.5012194444444444,
+          "ci95_halfwidth": 0.009917975367723788
+        },
+        "stay": {
+          "mean": 20.10171666666667,
+          "ci95_halfwidth": 1.2782302771211858
+        },
+        "stay_sd": {
+          "mean": 31.736906666666666,
+          "ci95_halfwidth": 1.5540401546428186
+        },
+        "stay_cv": {
+          "mean": 1.5789887157989788,
+          "ci95_halfwidth": 0.03067826563603921
+        },
+        "observed_lost": 0,
+        "max_waiting": 35
+      }
+    },
+    "control_exp_075": {
+      "parameters": {
+        "name": "control_exp_075",
+        "family": "control",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "exp",
+        "service_time": 8.637500000000001,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          256
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7483611666666667,
+          "ci95_halfwidth": 0.007589599824487633
+        },
+        "throughput": {
+          "mean": 0.08698439923817788,
+          "ci95_halfwidth": 0.0009812671149987114
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 2.290841,
+          "ci95_halfwidth": 0.2218566674163011
+        },
+        "wait": {
+          "mean": 26.33734,
+          "ci95_halfwidth": 2.573947864516775
+        },
+        "wait_sd": {
+          "mean": 35.23217,
+          "ci95_halfwidth": 7.802148924052456
+        },
+        "wait_cv": {
+          "mean": 1.3360468256304074,
+          "ci95_halfwidth": 0.16442807355685018
+        },
+        "positive_wait_cv": {
+          "mean": 1.0412244160621553,
+          "ci95_halfwidth": 0.159541222732526
+        },
+        "wait_zero": {
+          "mean": 0.2514777777777778,
+          "ci95_halfwidth": 0.008477780964217797
+        },
+        "stay": {
+          "mean": 34.94074666666667,
+          "ci95_halfwidth": 2.5911303483672903
+        },
+        "stay_sd": {
+          "mean": 36.29911666666667,
+          "ci95_halfwidth": 7.670179005602202
+        },
+        "stay_cv": {
+          "mean": 1.037770395507375,
+          "ci95_halfwidth": 0.1413729555304645
+        },
+        "observed_lost": 0,
+        "max_waiting": 52
+      }
+    },
+    "control_h2_075": {
+      "parameters": {
+        "name": "control_h2_075",
+        "family": "control",
+        "incoming": "exp",
+        "gap": 11.516666666666667,
+        "service": "h2",
+        "service_time": 8.637500000000001,
+        "channels": [
+          1
+        ],
+        "waiting_places": [
+          256
+        ],
+        "offered_load": 0.75,
+        "warmup": 10000,
+        "observations": 120000,
+        "replicates": 3,
+        "checkpoints": []
+      },
+      "metrics": {
+        "busy": {
+          "mean": 0.7493687666666666,
+          "ci95_halfwidth": 0.017206906225028077
+        },
+        "throughput": {
+          "mean": 0.08697627237907914,
+          "ci95_halfwidth": 0.0009922321814070962
+        },
+        "loss_probability": {
+          "mean": 0.0,
+          "ci95_halfwidth": 0.0
+        },
+        "queue_length": {
+          "mean": 5.716944,
+          "ci95_halfwidth": 1.3078633631071632
+        },
+        "wait": {
+          "mean": 65.71778,
+          "ci95_halfwidth": 14.814197350908806
+        },
+        "wait_sd": {
+          "mean": 95.41393000000001,
+          "ci95_halfwidth": 27.304530750112644
+        },
+        "wait_cv": {
+          "mean": 1.450269009650347,
+          "ci95_halfwidth": 0.1307459139927515
+        },
+        "positive_wait_cv": {
+          "mean": 1.1505461867053728,
+          "ci95_halfwidth": 0.12721959223486037
+        },
+        "wait_zero": {
+          "mean": 0.25109444444444445,
+          "ci95_halfwidth": 0.016972401510291245
+        },
+        "stay": {
+          "mean": 74.33350666666666,
+          "ci95_halfwidth": 14.956670277337219
+        },
+        "stay_sd": {
+          "mean": 96.97709333333333,
+          "ci95_halfwidth": 27.11443545618959
+        },
+        "stay_cv": {
+          "mean": 1.30281501478359,
+          "ci95_halfwidth": 0.12905503798645385
+        },
+        "observed_lost": 0,
+        "max_waiting": 94
+      }
+    }
+  },
+  "stability": {
+    "flow_exp_050": 2500,
+    "flow_exp_075": 5000,
+    "flow_exp_095": 5000,
+    "flow_exp_099": null,
+    "flow_trace_050": null,
+    "flow_trace_075": null,
+    "flow_trace_095": 2500,
+    "flow_trace_099": null,
+    "flow_h2_050": null,
+    "flow_h2_075": null,
+    "flow_h2_095": null,
+    "flow_h2_099": null,
+    "flow_uniform_050": 5000,
+    "flow_uniform_075": 2500,
+    "flow_uniform_095": null,
+    "flow_uniform_099": null,
+    "transient_010": 600,
+    "transient_gap_010": 2500,
+    "transient_030": null,
+    "transient_gap_030": null,
+    "transient_070": null,
+    "transient_gap_070": null,
+    "transient_090": null,
+    "transient_gap_090": null
+  }
+}

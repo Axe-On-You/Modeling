@@ -1,0 +1,1832 @@
+{
+  "trace": {
+    "variant": 207,
+    "count": 300,
+    "uir1_mean": 11.516666666666667,
+    "uir1_cv": 2.428825264306243,
+    "decimal_mean": 11.995543333333334,
+    "decimal_cv": 2.3336078058699954
+  },
+  "seeds": [
+    [
+      1621021382,
+      1236364591,
+      1927327154,
+      2071818196,
+      1406563226,
+      1060564596,
+      343409217
+    ],
+    [
+      372360264,
+      1745541231,
+      1203616572,
+      190712730,
+      1158204880,
+      1832112065,
+      810492734
+    ],
+    [
+      834582398,
+      1580457291,
+      399179826,
+      63168624,
+      1405482432,
+      2103030677,
+      158574526
+    ],
+    [
+      216699723,
+      911635051,
+      1401502384,
+      583401321,
+      1561784130,
+      237815033,
+      1447526154
+    ],
+    [
+      1726224393,
+      114016608,
+      605432968,
+      734745401,
+      1002157079,
+      1419324536,
+      701535395
+    ]
+  ],
+  "experiments": [
+    {
+      "name": "baseline",
+      "family": "baseline",
+      "incoming": "exp",
+      "gap": 1.6666666666666667,
+      "service": "exp",
+      "service_time": 5,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 2.25,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "flow_exp_050",
+      "family": "flow",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_exp_075",
+      "family": "flow",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 11.516666666666667,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_exp_095",
+      "family": "flow",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 14.587777777777779,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.95,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_exp_099",
+      "family": "flow",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 15.202,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.99,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_trace_050",
+      "family": "flow",
+      "incoming": "trace",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_trace_075",
+      "family": "flow",
+      "incoming": "trace",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 11.516666666666667,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_trace_095",
+      "family": "flow",
+      "incoming": "trace",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 14.587777777777779,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.95,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_trace_099",
+      "family": "flow",
+      "incoming": "trace",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 15.202,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.99,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_h2_050",
+      "family": "flow",
+      "incoming": "h2",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_h2_075",
+      "family": "flow",
+      "incoming": "h2",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 11.516666666666667,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_h2_095",
+      "family": "flow",
+      "incoming": "h2",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 14.587777777777779,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.95,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_h2_099",
+      "family": "flow",
+      "incoming": "h2",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 15.202,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.99,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_uniform_050",
+      "family": "flow",
+      "incoming": "uniform",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_uniform_075",
+      "family": "flow",
+      "incoming": "uniform",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 11.516666666666667,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_uniform_095",
+      "family": "flow",
+      "incoming": "uniform",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 14.587777777777779,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.95,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "flow_uniform_099",
+      "family": "flow",
+      "incoming": "uniform",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 15.202,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.99,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "transient_010",
+      "family": "transient",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 1.5355555555555558,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.1,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 1,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "transient_gap_010",
+      "family": "transient_gap",
+      "incoming": "exp",
+      "gap": 37.5,
+      "service": "exp",
+      "service_time": 5,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.1,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 1,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "transient_030",
+      "family": "transient",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 4.6066666666666665,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.3,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 1,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "transient_gap_030",
+      "family": "transient_gap",
+      "incoming": "exp",
+      "gap": 12.5,
+      "service": "exp",
+      "service_time": 5,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.3,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 1,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "transient_070",
+      "family": "transient",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 10.74888888888889,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.7,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 1,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "transient_gap_070",
+      "family": "transient_gap",
+      "incoming": "exp",
+      "gap": 5.357142857142858,
+      "service": "exp",
+      "service_time": 5,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.7,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 1,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "transient_090",
+      "family": "transient",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 1,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "transient_gap_090",
+      "family": "transient_gap",
+      "incoming": "exp",
+      "gap": 4.166666666666667,
+      "service": "exp",
+      "service_time": 5,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 1,
+      "checkpoints": [
+        10,
+        50,
+        100,
+        200,
+        300,
+        600,
+        1200,
+        2500,
+        5000,
+        10000
+      ]
+    },
+    {
+      "name": "service_e2_050",
+      "family": "service",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "e2",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "service_e2_075",
+      "family": "service",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "e2",
+      "service_time": 11.516666666666667,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "service_e2_095",
+      "family": "service",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "e2",
+      "service_time": 14.587777777777779,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.95,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "service_e2_099",
+      "family": "service",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "e2",
+      "service_time": 15.202,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.99,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "service_h2_050",
+      "family": "service",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "h2",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "service_h2_075",
+      "family": "service",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "h2",
+      "service_time": 11.516666666666667,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "service_h2_095",
+      "family": "service",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "h2",
+      "service_time": 14.587777777777779,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.95,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "service_h2_099",
+      "family": "service",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "h2",
+      "service_time": 15.202,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.99,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_000",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        0,
+        0
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_001",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        1,
+        1
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_002",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        2
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_004",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        4,
+        4
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_008",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        8,
+        8
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_016",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        16,
+        16
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_032",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        32,
+        32
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_064",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        64,
+        64
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_128",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        128,
+        128
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_050_256",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        256,
+        256
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_000",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        0,
+        0
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_001",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        1,
+        1
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_002",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        2,
+        2
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_004",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        4,
+        4
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_008",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        8,
+        8
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_016",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        16,
+        16
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_032",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        32,
+        32
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_064",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        64,
+        64
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_128",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        128,
+        128
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "buffer_090_256",
+      "family": "buffer",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 13.82,
+      "channels": [
+        1,
+        1
+      ],
+      "waiting_places": [
+        256,
+        256
+      ],
+      "offered_load": 0.9,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_work_050_1",
+      "family": "servers_work",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        2
+      ],
+      "offered_load": 0.6666666666666666,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_load_050_1",
+      "family": "servers_load",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 5.758333333333334,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        2
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_work_050_3",
+      "family": "servers_work",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 7.677777777777778,
+      "channels": [
+        2,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.25,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_load_050_3",
+      "family": "servers_load",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 15.355555555555556,
+      "channels": [
+        2,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_work_075_1",
+      "family": "servers_work",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 11.516666666666667,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        2
+      ],
+      "offered_load": 1.0,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_load_075_1",
+      "family": "servers_load",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 8.637500000000001,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        2
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_work_075_3",
+      "family": "servers_work",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 11.516666666666667,
+      "channels": [
+        2,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.375,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_load_075_3",
+      "family": "servers_load",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 23.033333333333335,
+      "channels": [
+        2,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_work_095_1",
+      "family": "servers_work",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 14.587777777777779,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        2
+      ],
+      "offered_load": 1.2666666666666666,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_load_095_1",
+      "family": "servers_load",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 10.940833333333334,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        2
+      ],
+      "offered_load": 0.95,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_work_095_3",
+      "family": "servers_work",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 14.587777777777779,
+      "channels": [
+        2,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.475,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_load_095_3",
+      "family": "servers_load",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 29.175555555555558,
+      "channels": [
+        2,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.95,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_work_099_1",
+      "family": "servers_work",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 15.202,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        2
+      ],
+      "offered_load": 1.3199999999999998,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_load_099_1",
+      "family": "servers_load",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 11.4015,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        2
+      ],
+      "offered_load": 0.99,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_work_099_3",
+      "family": "servers_work",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 15.202,
+      "channels": [
+        2,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.495,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "servers_load_099_3",
+      "family": "servers_load",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 30.404,
+      "channels": [
+        2,
+        1
+      ],
+      "waiting_places": [
+        2,
+        1
+      ],
+      "offered_load": 0.99,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "control_exp_050",
+      "family": "control",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 5.758333333333334,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        256
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "control_h2_050",
+      "family": "control",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "h2",
+      "service_time": 5.758333333333334,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        256
+      ],
+      "offered_load": 0.5,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "control_exp_075",
+      "family": "control",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "exp",
+      "service_time": 8.637500000000001,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        256
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    },
+    {
+      "name": "control_h2_075",
+      "family": "control",
+      "incoming": "exp",
+      "gap": 11.516666666666667,
+      "service": "h2",
+      "service_time": 8.637500000000001,
+      "channels": [
+        1
+      ],
+      "waiting_places": [
+        256
+      ],
+      "offered_load": 0.75,
+      "warmup": 10000,
+      "observations": 120000,
+      "replicates": 5,
+      "checkpoints": []
+    }
+  ]
+}

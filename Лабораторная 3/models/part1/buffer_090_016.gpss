@@ -1,0 +1,43 @@
+* UIR 3 Part 1: buffer_090_016, replication 1
+* Time unit is one second.
+       RMULT 1621021382,1236364591,1927327154,2071818196,1406563226,1060564596,343409217
+Cap1 STORAGE 17
+Srv1 STORAGE 1
+Cap2 STORAGE 17
+Srv2 STORAGE 1
+WTall TABLE P3,0,3.455,65
+STall TABLE M1,0,3.455,65
+
+       GENERATE (Exponential(2,0,11.516666667))
+Route  MARK
+       TRANSFER .75,In2,In1
+In1    TEST L S$Cap1,17,Lost1
+       ENTER Cap1
+       QUEUE Queue1
+       ENTER Srv1
+       DEPART Queue1
+       ASSIGN 3,M1
+       ADVANCE (Exponential(3,0,13.82))
+            TABULATE WTall
+       TABULATE STall
+       LEAVE Srv1
+       LEAVE Cap1
+Done1  TERMINATE 1
+Lost1  TERMINATE 1
+In2    TEST L S$Cap2,17,Lost2
+       ENTER Cap2
+       QUEUE Queue2
+       ENTER Srv2
+       DEPART Queue2
+       ASSIGN 3,M1
+       ADVANCE (Exponential(5,0,13.82))
+            TABULATE WTall
+       TABULATE STall
+       LEAVE Srv2
+       LEAVE Cap2
+Done2  TERMINATE 1
+Lost2  TERMINATE 1
+
+       START 10000,NP
+       RESET
+       START 120000

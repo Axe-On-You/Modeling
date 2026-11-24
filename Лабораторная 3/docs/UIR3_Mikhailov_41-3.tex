@@ -1,0 +1,157 @@
+% !TeX program = xelatex
+\documentclass[a4paper,12pt]{article}
+% Личная преамбула и титульный лист; заполнить поля текущей работы.
+\newcommand{\LabSubject}{Моделирование}
+\newcommand{\LabWorkType}{УЧЕБНО-ИССЛЕДОВАТЕЛЬСКАЯ РАБОТА}
+\newcommand{\LabNumber}{3}
+\newcommand{\LabTopic}{Исследование СМО и СеМО}
+\newcommand{\LabVariant}{41/3} % Пустое значение скрывает строку варианта.
+\newcommand{\LabAuthor}{Михайлов Петр Сергеевич}
+\newcommand{\LabGroup}{P3311}
+\newcommand{\LabTeacher}{Вирта Виктория Владимировна}
+\newcommand{\LabYear}{2026}
+
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T2A]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage[russian]{babel}
+\else
+  \usepackage{fontspec}
+  \usepackage{polyglossia}
+  \setdefaultlanguage{russian}
+  \setotherlanguage{english}
+  \IfFontExistsTF{Times New Roman}{%
+    \setmainfont{Times New Roman}\newfontfamily\cyrillicfont{Times New Roman}}{%
+    \IfFontExistsTF{NimbusRoman-Regular.otf}{%
+      \setmainfont{NimbusRoman}[Extension=.otf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
+      \newfontfamily\cyrillicfont{NimbusRoman}[Extension=.otf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
+    }{\setmainfont{DejaVu Serif}\newfontfamily\cyrillicfont{DejaVu Serif}}}
+  \setsansfont{Arial}
+  \newfontfamily\cyrillicfontsf{Arial}
+  \setmonofont{Consolas}
+  \newfontfamily\cyrillicfonttt{Consolas}
+\fi
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx,geometry,listings,xcolor,hyperref,float,booktabs}
+\usepackage{longtable,array,tabularx,caption}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,fit,positioning}
+
+\geometry{left=2cm,right=1.5cm,top=2cm,bottom=2cm}
+\hypersetup{unicode=true,colorlinks=true,linkcolor=black,urlcolor=blue!60!black,
+ pdftitle={\LabWorkType\space №\LabNumber. \LabTopic},pdfauthor={\LabAuthor}}
+\captionsetup{font=small,labelsep=period}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{.2em}
+\linespread{1.05}
+\raggedbottom
+\setcounter{tocdepth}{2}
+\setlength{\emergencystretch}{2em}
+\tolerance=3000
+\lstdefinestyle{mypython}{language=Python,basicstyle=\ttfamily\scriptsize,
+ keywordstyle=\color{blue!65!black}\bfseries,stringstyle=\color{red!65!black},
+ commentstyle=\color{green!35!black},numbers=left,numberstyle=\tiny\color{gray},
+ stepnumber=1,numbersep=7pt,showstringspaces=false,tabsize=4,frame=single,
+ breaklines=true,breakatwhitespace=false,columns=fullflexible,keepspaces=true,
+ xleftmargin=14pt,framexleftmargin=10pt,backgroundcolor=\color{gray!3}}
+\lstset{style=mypython}
+\usepackage{fancyvrb}
+\makeatletter
+\let\TableRows\@@input
+\makeatother
+
+\begin{document}
+\begin{titlepage}
+\centering
+{\fontsize{11}{13}\selectfont\textbf{Министерство науки и высшего образования Российской Федерации}}\\
+{\fontsize{7}{10}\selectfont ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ}\\
+\vspace{.2cm}
+{\fontsize{14}{17}\selectfont\textbf{«НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ ИТМО»}}
+\vspace{1cm}
+
+{\fontsize{12}{14}\selectfont\textbf{Факультет программной инженерии и компьютерной техники}}
+\vspace{1cm}
+
+{\fontsize{12}{14}\selectfont\textbf{Дисциплина: \LabSubject}}
+\vspace*{\fill}
+
+{\fontsize{18}{22}\selectfont\textbf{\LabWorkType\ №\LabNumber}}\\
+\vspace{.5cm}
+{\fontsize{14}{17}\selectfont\textbf{по теме: «\LabTopic»}}
+\vspace{1.5cm}
+
+\ifx\LabVariant\empty\else{\fontsize{12}{14}\selectfont\textbf{Вариант: \LabVariant}}\fi
+\vspace{1.5cm}
+\begin{flushright}
+\fontsize{12}{14}\selectfont
+Выполнил:\\
+\LabAuthor\\
+Группа: \LabGroup\\[1em]
+Преподаватель:\\
+\LabTeacher
+\end{flushright}
+\vfill
+{\fontsize{12}{14}\selectfont Санкт-Петербург, \LabYear}
+\end{titlepage}
+\setcounter{page}{2}
+{\small\setlength{\parskip}{0pt}\tableofcontents}
+\newpage
+
+\section{Цель и постановка работы}
+
+Цель работы — исследовать характеристики систем и сетей массового
+обслуживания методом дискретно-событийного моделирования. В первой
+части воспроизводится работа выбранной системы из УИР~2 и сравниваются
+эффекты изменения поступления, обслуживания и структуры. Во второй
+части исследуются замкнутая и разомкнутая сети топологии M3 по
+варианту \(41/3\), определяется узкое место и сравниваются режимы
+при одинаковом потоке на границе сети.
+
+\section{Метод измерения}
+
+Модельное время измеряется в секундах. В GPSS World транзакт
+представляет заявку, а событие переводит её между узлами и фазами
+обслуживания. Для сравнения учитываются продуктивные завершения,
+потери, накопленное время пребывания и интегралы числа занятых
+приборов и длины очереди. При оценке установившихся характеристик
+после прогрева выполняется \texttt{RESET}: счётчики измерений
+обнуляются при сохранении текущего состояния модели. Незавершённые
+на границе измерения заявки учитываются при проверке баланса.
+
+Все экспериментальные данные в работе получены в GPSS World.
+Для контрольных прогонов сохранены стандартные отчёты, для
+параметрических серий процедура PLUS выгружает измерения в CSV.
+Скрипты Python читают эти файлы, рассчитывают сводные показатели
+и строят графики. Аналитические модели используются для сверки.
+
+При чтении стандартного отчёта загрузка приборов берётся из блока
+\texttt{STORAGE}, средняя длина очереди — из \texttt{QUEUE}. Нулевое
+ожидание учитывается в средних временах наравне с положительным.
+Распределения ожидания и пребывания регистрируются посредством
+\texttt{TABLE}, \texttt{QTABLE} и \texttt{TABULATE}.
+Отношение числа завершений к времени наблюдения даёт
+производительность \(X\), а произведение \(X\overline W\)
+проверяет оценку средней длины очереди в стационарном режиме.
+
+\input{part1.tex}
+\input{part2.tex}
+\input{evidence.tex}
+\input{conclusions.tex}
+
+\clearpage
+\appendix
+\section{Листинги моделей GPSS World}
+
+\lstset{language={},basicstyle=\ttfamily\fontsize{7.5}{9}\selectfont,
+  columns=fullflexible,keepspaces=true,showstringspaces=false,breaklines=true}
+\subsection{Контрольная модель двухприборной СМО}
+\lstinputlisting{../models/part1/baseline.gpss}
+
+\subsection{Замкнутая модель сети M3}
+\lstinputlisting{../models/part2/closed.gpss}
+
+\subsection{Разомкнутая модель сети M3}
+\lstinputlisting{../models/part2/open.gpss}
+
+\end{document}

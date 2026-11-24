@@ -1,0 +1,80 @@
+* UIR 3, variant 41/3, M3, closed
+* Stream 1 routes; streams 2-5 serve U1-U4; 6 arrives; 7 selects a phase.
+                RMULT 64010,128017,192024,256031,320038,384045,448052
+* P2 is the node-arrival clock. P3 accumulates waiting over the cycle.
+StoreU1        STORAGE 3
+Delay1          QTABLE QueueU1,0,1,16
+Visit1          TABLE MP2,0,5,12
+StoreU2        STORAGE 2
+Delay2          QTABLE QueueU2,0,1,16
+Visit2          TABLE MP2,0,5,12
+StoreU3        STORAGE 1
+Delay3          QTABLE QueueU3,0,1,16
+Visit3          TABLE MP2,0,5,12
+StoreU4        STORAGE 1
+Delay4          QTABLE QueueU4,0,1,16
+Visit4          TABLE MP2,0,5,12
+Residence       TABLE M1,0,25,18
+WaitNet         TABLE P3,0,25,18
+
+* Create the fixed population or generate external arrivals.
+                GENERATE ,,,6
+Cycle           MARK
+                ASSIGN 3,0
+* Node 1: FCFS queue and 3 parallel server(s).
+NodeU1         MARK 2
+                QUEUE QueueU1
+                ENTER StoreU1
+                DEPART QueueU1
+                ASSIGN 3+,MP2
+                ADVANCE (Exponential(2,0,4))
+                LEAVE StoreU1
+                TABULATE Visit1
+* One draw routes with equal probabilities to 0, 2, 3, 4.
+                ASSIGN 1,RN1
+                TEST GE P1,250,NetExit
+                TEST GE P1,500,NodeU2
+                TEST GE P1,750,NodeU3
+                TRANSFER ,NodeU4
+* Node 2: FCFS queue and 2 parallel server(s).
+NodeU2         MARK 2
+                QUEUE QueueU2
+                ENTER StoreU2
+                DEPART QueueU2
+                ASSIGN 3+,MP2
+                ADVANCE (Exponential(3,0,2.5))
+                LEAVE StoreU2
+                TABULATE Visit2
+                TRANSFER ,NodeU1
+* Node 3: FCFS queue and 1 parallel server(s).
+NodeU3         MARK 2
+                QUEUE QueueU3
+                ENTER StoreU3
+                DEPART QueueU3
+                ASSIGN 3+,MP2
+                ADVANCE (Exponential(4,0,14))
+                LEAVE StoreU3
+                TABULATE Visit3
+                TRANSFER ,NodeU1
+* Node 4: FCFS queue and 1 parallel server(s).
+NodeU4         MARK 2
+                QUEUE QueueU4
+                ENTER StoreU4
+                DEPART QueueU4
+                ASSIGN 3+,MP2
+                ADVANCE (Exponential(5,0,5))
+                LEAVE StoreU4
+                TABULATE Visit4
+                TRANSFER ,NodeU1
+NetExit         TABULATE Residence
+                TABULATE WaitNet
+                TRANSFER ,Cycle
+
+* Stop once for warm-up and once at the end of measurement.
+                GENERATE 100000,,,1
+                TERMINATE 1
+                GENERATE 1100000,,,1
+                TERMINATE 1
+                START 1,NP
+                RESET
+                START 1
